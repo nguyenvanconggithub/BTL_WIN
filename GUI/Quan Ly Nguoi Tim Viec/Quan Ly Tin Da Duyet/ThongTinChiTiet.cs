@@ -66,6 +66,15 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            //hide textbox & combobox & datetimePick
+            foreach (Control crl in this.Controls) //get all Panel Controls
+            {
+                foreach (Control child in crl.Controls) //get all Controls in Panel Controls
+                {
+                    if (child is TextBox || child is ComboBox || child is DateTimePicker || child is RichTextBox)
+                        child.Hide();
+                }
+            }
             this.SendToBack();
         }
 
@@ -170,7 +179,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                     btnSua.Enabled = true;
                     btnXoa.Enabled = true;
                     MessageBox.Show(message);
-                    if(message == "Lưu thành công")
+                    if(message == "Lưu Thành Công")
                     {
                         ThongTinChiTiet_Load(sender, e);
                         LoadData(tinDTO);
