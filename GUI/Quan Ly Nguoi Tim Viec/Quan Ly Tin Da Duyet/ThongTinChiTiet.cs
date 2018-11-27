@@ -22,7 +22,13 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
             tinDTO = tinInfo;
             ptbAvatar.Image = Image.FromStream(new MemoryStream(tinDTO.Img));
             lblHoTen.Text = tinDTO.HoTen;
-            lblGioiTinh.Text = tinDTO.GioiTinh;
+            if (tinDTO.GioiTinh == "M")
+                lblGioiTinh.Text = "Nam";
+            if (tinDTO.GioiTinh == "F")
+                lblGioiTinh.Text = "Nữ";
+            if (tinDTO.GioiTinh == "O")
+                lblGioiTinh.Text = "Khác";
+            lblNgaySinh.Text = Convert.ToDateTime(tinDTO.NgaySinh).ToString("dd-MM-yyyy");
             lblSoDienThoai.Text = tinDTO.SoDienThoai;
             lblEmail.Text = tinDTO.Email;
             lblDiaChi.Text = tinDTO.DiaChi;
@@ -35,7 +41,13 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
             lblMucLuongMongMuon.Text = tinDTO.Luong;
 
             txtHoTen.Text = tinDTO.HoTen;
-            cboGioiTinh.Text = tinDTO.GioiTinh;
+            if (tinDTO.GioiTinh == "M")
+                cboGioiTinh.Text = "Nam";
+            if (tinDTO.GioiTinh == "F")
+                cboGioiTinh.Text = "Nữ";
+            if (tinDTO.GioiTinh == "O")
+                cboGioiTinh.Text = "Khác";
+            dtpNgaySinh.Text = tinDTO.NgaySinh;
             txtDienThoai.Text = tinDTO.SoDienThoai;
             txtEmail.Text = tinDTO.Email;
             rtbDiaChi.Text = tinDTO.DiaChi;
@@ -75,6 +87,8 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                         child.Hide();
                 }
             }
+            btnSua.Text = "Sửa";
+            btnXoa.Text = "Xóa";
             this.SendToBack();
         }
 
