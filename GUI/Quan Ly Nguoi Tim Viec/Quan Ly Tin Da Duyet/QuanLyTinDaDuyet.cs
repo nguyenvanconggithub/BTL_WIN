@@ -42,8 +42,6 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                     tinHienTai++;
                 }
             }
-            else
-                MessageBox.Show("Ko có tin nào đã duyệt !");
         }
         private void QuanLyTinDaDuyet_Load(object sender, EventArgs e)
         {
