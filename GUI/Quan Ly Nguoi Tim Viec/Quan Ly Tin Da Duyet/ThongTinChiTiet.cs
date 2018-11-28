@@ -17,10 +17,12 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
         }
         BLL.TinTimViec tin = new BLL.TinTimViec();
         DTO.TinTimViec tinDTO = new DTO.TinTimViec();
+        Byte[] oldAvatar = null;
         public void LoadData(DTO.TinTimViec tinInfo)
         {
             tinDTO = tinInfo;
             ptbAvatar.Image = Image.FromStream(new MemoryStream(tinDTO.Img));
+            oldAvatar = tinDTO.Img;
             lblHoTen.Text = tinDTO.HoTen;
             if (tinDTO.GioiTinh == "M")
                 lblGioiTinh.Text = "Nam";
@@ -89,9 +91,10 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
             }
             btnSua.Text = "Sửa";
             btnXoa.Text = "Xóa";
+            btnXoa.BackColor = Color.FromArgb(215, 35, 35);
             this.SendToBack();
         }
-
+        //This Function is Xóa AND Nhập lại
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if(btnXoa.Text == "Xóa")
@@ -101,11 +104,11 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                 MessageBox.Show(msg);
                 this.SendToBack();
 
-            }
+            }//Else Button is Nhập Lại
             else
             {
                 lblHoTen.Text = tinDTO.HoTen;
-                //ptbAvatar.Image = Image.FromStream(new MemoryStream(tinDTO.Img));
+                ptbAvatar.Image = Image.FromStream(new MemoryStream(oldAvatar));
                 lblGioiTinh.Text = tinDTO.GioiTinh;
                 lblSoDienThoai.Text = tinDTO.SoDienThoai;
                 lblEmail.Text = tinDTO.Email;
@@ -119,7 +122,12 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                 lblMucLuongMongMuon.Text = tinDTO.Luong;
 
                 txtHoTen.Text = tinDTO.HoTen;
-                cboGioiTinh.Text = tinDTO.GioiTinh;
+                if (tinDTO.GioiTinh == "M")
+                    cboGioiTinh.Text = "Nam";
+                else if (tinDTO.GioiTinh == "F")
+                    cboGioiTinh.Text = "Nữ";
+                else
+                    cboGioiTinh.Text = "Khác";
                 txtDienThoai.Text = tinDTO.SoDienThoai;
                 txtEmail.Text = tinDTO.Email;
                 rtbDiaChi.Text = tinDTO.DiaChi;
@@ -133,7 +141,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
             }
             
         }
-
+        //This function for Sửa AND Lưu
         private void btnSua_Click(object sender, EventArgs e)
         {
             if(btnSua.Text == "Sửa")
@@ -151,7 +159,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                 btnXoa.Text = "Nhập lại";
                 btnXoa.BackColor = Color.FromArgb(153, 153, 153);
             }
-            else
+            else // Else Button is Lưu
             {
                 btnSua.Enabled = false;
                 btnXoa.Enabled = false;
@@ -172,6 +180,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                 if (!error)
                 {
                     tinDTO.HoTen = txtHoTen.Text;
+                    //tinDTO.Img is Updated at ptbAvatar_Click() Event;
                     tinDTO.NgaySinh = dtpNgaySinh.Value.ToString("yyyy-MM-dd");
                     if (cboGioiTinh.Text == "Nam")
                         tinDTO.GioiTinh = "M";

@@ -423,6 +423,7 @@
             // ptbAvatar
             // 
             this.ptbAvatar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ptbAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAvatar.Location = new System.Drawing.Point(12, 13);
             this.ptbAvatar.Margin = new System.Windows.Forms.Padding(0);
             this.ptbAvatar.Name = "ptbAvatar";
@@ -445,6 +446,7 @@
             // cboGioiTinh
             // 
             this.cboGioiTinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cboGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboGioiTinh.FormattingEnabled = true;
             this.cboGioiTinh.Items.AddRange(new object[] {
             "Nam",

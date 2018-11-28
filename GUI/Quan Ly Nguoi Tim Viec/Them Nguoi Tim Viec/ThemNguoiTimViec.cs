@@ -142,6 +142,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Them_Nguoi_Tim_Viec
                 btnThem.Enabled = true;
                 btnNhapLai.Enabled = true;
                 MessageBox.Show(message);
+                btnNhapLai_Click(sender, e);
             }
             else
             {
@@ -157,7 +158,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Them_Nguoi_Tim_Viec
             {
                 foreach(Control child in crl.Controls) //get all Controls in Panel Controls
                 {
-                    if (child is TextBox)
+                    if (child is TextBox || child is RichTextBox)
                         child.ResetText();
                     if (child is ComboBox)
                     {

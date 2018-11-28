@@ -18,16 +18,22 @@ namespace DAL
         {
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM TinTimViec WHERE DaDuyet='true'", getConnect());
             DataTable dt = new DataTable();
+            DataView dv = new DataView();
             da.Fill(dt);
-            dt.DefaultView.Sort = "ThoiGianDuyet DESC"; // Xem Tin Moi Nhat Truoc
+            dv = dt.DefaultView;
+            dv.Sort = "ThoiGianDuyet DESC"; // Xem Tin Moi Nhat Truoc
+            dt = dv.ToTable();
             return dt;
         }
         public DataTable getTinChuaDuyet()
         {
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM TinTimViec WHERE DaDuyet='false'", getConnect());
             DataTable dt = new DataTable();
+            DataView dv = new DataView();
             da.Fill(dt);
-            dt.DefaultView.Sort = "ThoiGianDuyet ASC"; // Xem Tin Cu Nhat Truoc
+            dv = dt.DefaultView;
+            dv.Sort = "ThoiGianDuyet ASC"; // Xem Tin Cu Nhat Truoc
+            dt = dv.ToTable(); 
             return dt;
         }
 

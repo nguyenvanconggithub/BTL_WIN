@@ -103,9 +103,10 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                 
             }
         }
-
+        //Call Active at FormChinh to UpdateData
         public void Active()
         {
+            thongTinChiTiet.SendToBack();
             LoadData();
         }
 
