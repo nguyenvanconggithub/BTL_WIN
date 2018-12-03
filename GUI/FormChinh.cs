@@ -90,7 +90,6 @@ namespace GUI
         {
             themNguoiTimViec.BringToFront();
             setHolderButton(sender);
-
             //themNguoiTimViec.Update();
         }
 
@@ -98,6 +97,7 @@ namespace GUI
         {
             duyetTinMoi_TimViec.BringToFront();
             setHolderButton(sender);
+            duyetTinMoi_TimViec.Active();
 
         }
 
@@ -105,7 +105,7 @@ namespace GUI
         {
             quanLyTinDaDuyet_TimViec.BringToFront();
             setHolderButton(sender);
-
+            quanLyTinDaDuyet_TimViec.Active(sender, e);
         }
 
         private void btnThemTinTuyenDung_Click(object sender, EventArgs e)
@@ -117,6 +117,7 @@ namespace GUI
 
         private void btnDuyetTinMoi_TuyenDung_Click(object sender, EventArgs e)
         {
+            duyetTinMoi_TuyenDung.Active();
             duyetTinMoi_TuyenDung.BringToFront();
             setHolderButton(sender);
 
@@ -124,6 +125,7 @@ namespace GUI
 
         private void btnQuanLyTinDaDuyet_TuyenDung_Click(object sender, EventArgs e)
         {
+            quanLyTinDaDuyet_TuyenDung.Active(sender,e);
             quanLyTinDaDuyet_TuyenDung.BringToFront();
             setHolderButton(sender);
 

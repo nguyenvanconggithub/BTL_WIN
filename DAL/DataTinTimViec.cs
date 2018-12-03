@@ -24,7 +24,8 @@ namespace DAL
             try
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=.;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
-                conn.Open();
+                if(conn.State == ConnectionState.Closed)
+                    conn.Open();
                 return conn;
             }
             catch(Exception)
@@ -133,10 +134,12 @@ namespace DAL
                 try
                 {
                     SqlConnection conn = getConnect();
-                    conn.Open();
+                    if(conn.State == ConnectionState.Closed)
+                        conn.Open();
                     command.Connection = conn;
                     command.ExecuteNonQuery();
-                    conn.Close();
+                    if(conn.State == ConnectionState.Open)
+                        conn.Close();
                     return "";
                 }
                 catch (SqlException e)

@@ -103,6 +103,12 @@
     <Compile Include="Quan Ly Tuyen Dung\Duyet Tin Moi\DuyetTinMoi.Designer.cs">
       <DependentUpon>DuyetTinMoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Quan Ly Tuyen Dung\Duyet Tin Moi\KhongCoTinChuaDuyet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quan Ly Tuyen Dung\Duyet Tin Moi\KhongCoTinChuaDuyet.Designer.cs">
+      <DependentUpon>KhongCoTinChuaDuyet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Quan Ly Tuyen Dung\Quan Ly Tin Da Duyet\QuanLyTinDaDuyet.cs">
       <SubType>UserControl</SubType>
     </Compile>
