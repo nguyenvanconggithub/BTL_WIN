@@ -16,10 +16,9 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi
         {
             InitializeComponent();
         }
-        BLL.TinTimViec tin = new BLL.TinTimViec();
         private void LoadData()
         {
-            DTO.TinTimViec tinDTO = tin.getTinChuaDuyetCuNhat();
+            DTO.TinTimViec tinDTO = BLL.TinTimViec.Instance.getTinChuaDuyetCuNhat();
             if (tinDTO != null)
             {
                 ptbAvatar.Image = Image.FromStream(new MemoryStream(tinDTO.Img));
@@ -49,7 +48,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi
                 blankUserControl.BringToFront();
             }
         }
-        private void DuyetTinMoi_Load(object sender,EventArgs e)
+        private void DuyetTinMoi_Load()
         {
             LoadData();
 
@@ -61,7 +60,8 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi
         private void btnDuyet_Click(object sender, EventArgs e)
         {
             string msg = "";
-            msg = tin.DuyetTin();
+            //msg = tin.DuyetTin();
+            msg = BLL.TinTimViec.Instance.DuyetTin();
             if (msg != "")
                 MessageBox.Show(msg);
             LoadData();
@@ -70,7 +70,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string msg = "";
-            msg = tin.XoaTin();
+            msg = BLL.TinTimViec.Instance.XoaTin();
             if (msg != "")
                 MessageBox.Show(msg);
             LoadData();
@@ -78,7 +78,10 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi
 
         public void Active()
         {
-            LoadData();
+            if (BLL.TinTimViec.Instance.KiemTraKetNoi() != "")
+                MessageBox.Show(BLL.TinTimViec.Instance.KiemTraKetNoi());
+            else
+                DuyetTinMoi_Load();
         }
 
         private void DuyetTinMoi_Resize(object sender, EventArgs e)
@@ -88,5 +91,6 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi
                 crl.Width = this.Width;
             }
         }
+
     }
 }

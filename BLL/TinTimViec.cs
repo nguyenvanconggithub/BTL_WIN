@@ -11,18 +11,37 @@ namespace BLL
 {
     public class TinTimViec
     {
-        DAL.DataTinTimViec data = new DataTinTimViec();
+        private static TinTimViec instance;
+
         DataTable dt = new DataTable();
+
+        public static TinTimViec Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new TinTimViec();
+                return instance;
+            }
+        }
+        public string KiemTraKetNoi()
+        {
+            if (DAL.DataTinTimViec.Instance.getConnect() == null)
+                return "Lỗi Kết Nối SQL Server, Kiểm Tra câu kết nối !";
+            return "";
+        }
         public string Insert(DTO.TinTimViec tin)
         {
             try
             {
+                string error = "";
                 string cmdString =
                     "INSERT INTO TinTimViec(Avatar,HoTen,GioiTinh,NgaySinh,Sdt,Email,DiaChi,NganhNghe,TrinhDo,NamKinhNghiem,ViTri,NoiLamViec,LoaiHinhCongViec,Luong,DaDuyet,ThoiGianDuyet)" +
                     "VALUES(@avt,@hoTen,@gt,@ngaySinh,@sdt,@email,@diaChi,@nganhNghe,@trinhDo,@namKinhNghiem,@viTri,@noiLamViec,@loaiHinhCongViec,@Luong,'true',@thoiGianDuyet)";
                 SqlCommand command = new SqlCommand(cmdString);
+                //command.Parameters.Add("@avt", SqlDbType.Image).Value = tin.Img;
                 command.Parameters.AddWithValue("@avt", tin.Img);
-                command.Parameters.AddWithValue("@hoTen", tin.HoTen);
+                command.Parameters.AddWithValue("@hoTen", tin.HoTen);  
                 command.Parameters.AddWithValue("@gt", tin.GioiTinh);
                 command.Parameters.AddWithValue("@ngaySinh", tin.NgaySinh);
                 command.Parameters.AddWithValue("@sdt", tin.SoDienThoai);
@@ -35,9 +54,11 @@ namespace BLL
                 command.Parameters.AddWithValue("@noiLamViec", tin.NoiLamViec);
                 command.Parameters.AddWithValue("@loaiHinhCongViec", tin.LoaiHinhCongViec);
                 command.Parameters.AddWithValue("@Luong", tin.Luong);
-                command.Parameters.AddWithValue("@thoiGianDuyet", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                data.ExcuteNonQuery(command);
-                return "Lưu Thành Công";
+                command.Parameters.AddWithValue("@thoiGianDuyet", DateTime.Now);
+                error = DataTinTimViec.Instance.ExcuteNonQuery(command);
+                if (error == "")
+                    return "Thêm Thành Công";
+                return error;
             }
             catch(Exception e)
             {
@@ -50,18 +71,23 @@ namespace BLL
             try
             {
                 string cmdString = "SELECT * FROM TinTimViec"
-                              + "WHERE NganhNghe = '" + search.NganhNghe + "'"
-                              + "AND NoiLamViec = '" + search.NoiLamViec + "'"
-                              + "AND LoaiHinhCongViec = '" + search.LoaiHinhCongViec + "'"
-                              + "AND TrinhDo = '" + search.TrinhDo + "'"
-                              + "AND NamKinhNghiem = '" + search.NamKinhNghiem + "'"
-                              + "AND GioiTinh = '" + search.GioiTinh + "'"
-                              + "AND NgaySinh > '" + search.NamSinhMin + "'"
-                              + "AND NgaySinh < '" + search.NamSinhMax + "'"
-                              + "AND Luong = '" + search.Luong + "'";
+                              + "WHERE NganhNghe LIKE @NganhNghe"
+                              + "AND NoiLamViec LIKE @NoiLamViec"
+                              + "AND LoaiHinhCongViec LIKE @LoaiHinhCongViec"
+                              + "AND TrinhDo LIKE @TrinhDo"
+                              + "AND NamKinhNghiem LIKE @NamKinhNghiem"
+                              + "AND GioiTinh LIKE @GioiTinh"
+                              + "AND Luong LIKE @Luong";
                 SqlCommand cmd = new SqlCommand(cmdString);
+                cmd.Parameters.AddWithValue("@NganhNghe", search.NganhNghe);
+                cmd.Parameters.AddWithValue("@NoiLamViec", search.NoiLamViec);
+                cmd.Parameters.AddWithValue("@LoaiHinhCongViec", search.LoaiHinhCongViec);
+                cmd.Parameters.AddWithValue("@TrinhDo", search.TrinhDo);
+                cmd.Parameters.AddWithValue("@NamKinhNghiem", search.NamKinhNghiem);
+                cmd.Parameters.AddWithValue("@GioiTinh", search.GioiTinh);
+                cmd.Parameters.AddWithValue("@Luong", search.Luong);
                 DataTable table = new DataTable();
-                table = data.timKiem(cmdString);
+                table = DataTinTimViec.Instance.timKiem(cmd);
 
                 return table;
             }
@@ -74,13 +100,15 @@ namespace BLL
         }
         public void UpdateTableChuaDuyet()
         {
-            dt.Clear();
-            dt = data.getTinChuaDuyet();
+            if(dt != null)
+                dt.Clear();
+            dt = DataTinTimViec.Instance.getTinChuaDuyet();
         }
         public DataTable UpdateTableDaDuyet()
         {
-            dt.Clear();
-            dt = data.getTinDaDuyet();
+            if(dt != null)
+                dt.Clear();
+            dt = DataTinTimViec.Instance.getTinDaDuyet();
 
             return dt;
         }
@@ -143,7 +171,7 @@ namespace BLL
         public DTO.TinTimViec getTinByMaTin(string maTin)
         {
             DataTable table = new DataTable();
-            table = data.getTinByMaTin(maTin);
+            table = DataTinTimViec.Instance.getTinByMaTin(maTin);
             DTO.TinTimViec tin = new DTO.TinTimViec();
             if(table != null && table.Rows.Count > 0)
             {
@@ -171,17 +199,30 @@ namespace BLL
         {
             try
             {
+                string err = "";
                 if (dt != null && dt.Rows.Count > 0)
                 {
-                    SqlCommand command = new SqlCommand("UPDATE TinTimViec SET DaDuyet='true' WHERE MaTin=@matin");
+                    SqlCommand command = new SqlCommand("UPDATE TinTimViec SET DaDuyet='true',ThoiGianDuyet=@timenow WHERE MaTin=@matin");
                     command.Parameters.AddWithValue("@matin", dt.Rows[0]["MaTin"]);
-                    data.ExcuteNonQuery(command);
+                    command.Parameters.Add("@timenow", SqlDbType.DateTime).Value = DateTime.Now;
+                    err = DataTinTimViec.Instance.ExcuteNonQuery(command);
                     UpdateTableChuaDuyet();
-                    return "";
+                    if (err != "")
+                        return err;
                 }
-                else
-                    return "Hết Tin Tiếp Theo";
-                
+
+                if (dt != null && dt.Rows.Count == 1)
+                {
+                    SqlCommand command = new SqlCommand("UPDATE TinTimViec SET DaDuyet='true',ThoiGianDuyet=@timenow WHERE MaTin=@matin");
+                    command.Parameters.AddWithValue("@matin", dt.Rows[0]["MaTin"]);
+                    command.Parameters.Add("@timenow", SqlDbType.DateTime).Value = DateTime.Now;
+                    err = DataTinTimViec.Instance.ExcuteNonQuery(command);
+                    UpdateTableChuaDuyet();
+                    if(err == "")
+                        return "Hết Tin Tiếp Theo";
+                    return err;
+                }
+                return "";
             }
             catch(Exception e)
             {
@@ -193,16 +234,28 @@ namespace BLL
         {
             try
             {
+                string err = "";
                 if (dt != null && dt.Rows.Count > 0)
                 {
+                    
                     SqlCommand command = new SqlCommand("DELETE TinTimViec WHERE MaTin=@matin");
                     command.Parameters.AddWithValue("@matin", dt.Rows[0]["MaTin"]);
-                    data.ExcuteNonQuery(command);
+                    err = DataTinTimViec.Instance.ExcuteNonQuery(command);
                     UpdateTableChuaDuyet();
-                    return "";
+                    if (err != "")
+                        return err;
                 }
-                else
-                    return "Hết Tin Tiếp Theo";
+                if (dt != null && dt.Rows.Count == 1)
+                {
+
+                    SqlCommand command = new SqlCommand("DELETE TinTimViec WHERE MaTin=@matin");
+                    command.Parameters.AddWithValue("@matin", dt.Rows[0]["MaTin"]);
+                    err = DataTinTimViec.Instance.ExcuteNonQuery(command);
+                    UpdateTableChuaDuyet();
+                    if (err == "")
+                        return "Hết Tin Tiếp Theo";
+                }
+                return "";
             }
             catch (Exception e)
             {
@@ -214,10 +267,14 @@ namespace BLL
         {
             try
             {
-                SqlCommand command = new SqlCommand("DELETE TinTimViec WHERE MaTin='" + maTin + "'");
-                data.ExcuteNonQuery(command);
                 UpdateTableChuaDuyet();
-                return "Đã Xóa";
+                string err = "";
+                SqlCommand command = new SqlCommand("DELETE TinTimViec WHERE MaTin='" + maTin + "'");
+                err = DataTinTimViec.Instance.ExcuteNonQuery(command);
+                UpdateTableChuaDuyet();
+                if(err == "")
+                    return "Đã Xóa";
+                return err;
             }
             catch (Exception e)
             {
@@ -229,6 +286,7 @@ namespace BLL
         {
             try
             {
+                string err = "";
                 string cmdString =
                    "UPDATE TinTimViec " +
                    "SET Avatar=@avt,HoTen=@hoTen,GioiTinh=@gt,NgaySinh=@ngaySinh,Sdt=@sdt,Email=@email,DiaChi=@diachi" +
@@ -252,8 +310,11 @@ namespace BLL
                 command.Parameters.AddWithValue("@loaiHinhCongViec", tin.LoaiHinhCongViec);
                 command.Parameters.AddWithValue("@Luong", tin.Luong);
                 command.Parameters.AddWithValue("@thoiGianDuyet", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                data.ExcuteNonQuery(command);
-                return "Lưu Thành Công";
+                err = DataTinTimViec.Instance.ExcuteNonQuery(command);
+                UpdateTableChuaDuyet();
+                if(err == "")
+                    return "Lưu Thành Công";
+                return err;
             }
             catch (Exception e)
             {

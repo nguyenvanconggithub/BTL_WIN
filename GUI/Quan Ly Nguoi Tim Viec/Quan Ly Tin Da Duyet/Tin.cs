@@ -15,14 +15,13 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
         {
             InitializeComponent();
         }
-        BLL.TinTimViec tin = new BLL.TinTimViec();
         DTO.TinTimViec tinDTO = new DTO.TinTimViec();
 
         private void Tin_Load(object sender, EventArgs e)
         {
             try
             {
-                tinDTO = tin.getTinByMaTin(this.Name);
+                tinDTO = BLL.TinTimViec.Instance.getTinByMaTin(this.Name);
                 lblMaTin.Text = this.Name;
                 lblNganhNghe.Text = tinDTO.NganhNghe;
                 lblLoaiHinhCongViec.Text = tinDTO.LoaiHinhCongViec;

@@ -15,7 +15,6 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
         {
             InitializeComponent();
         }
-        BLL.TinTimViec tin = new BLL.TinTimViec();
         DTO.TinTimViec tinDTO = new DTO.TinTimViec();
         Byte[] oldAvatar = null;
         public void LoadData(DTO.TinTimViec tinInfo)
@@ -92,6 +91,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
             btnSua.Text = "Sửa";
             btnXoa.Text = "Xóa";
             btnXoa.BackColor = Color.FromArgb(215, 35, 35);
+            this.Hide();
             this.SendToBack();
         }
         //This Function is Xóa AND Nhập lại
@@ -100,8 +100,9 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
             if(btnXoa.Text == "Xóa")
             {
                 string msg = "";
-                msg = tin.XoaMaTin(tinDTO.MaTin);
+                msg = BLL.TinTimViec.Instance.XoaMaTin(tinDTO.MaTin);
                 MessageBox.Show(msg);
+                this.Hide();
                 this.SendToBack();
 
             }//Else Button is Nhập Lại
@@ -198,7 +199,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                     tinDTO.ViTri = cboViTriMongMuon.Text;
                     tinDTO.LoaiHinhCongViec = cboLoaiHinhCongViec.Text;
                     tinDTO.Luong = cboMucLuongMongMuon.Text;
-                    message = tin.UpDate(tinDTO);
+                    message = BLL.TinTimViec.Instance.UpDate(tinDTO);
                     btnSua.Enabled = true;
                     btnXoa.Enabled = true;
                     MessageBox.Show(message);
@@ -209,6 +210,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                     }
                     btnSua.Text = "Sửa";
                     btnXoa.Text = "Xóa";
+                    btnXoa.BackColor = Color.FromArgb(210, 35, 35);
 
                 }
                 else
@@ -263,9 +265,17 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
 
         private void ptbAvatar_Click(object sender, EventArgs e)
         {
+            OpenFileDialog openFile = new OpenFileDialog();
             try
             {
-                OpenFileDialog openFile = new OpenFileDialog();
+                openFile.Filter = "Bitmap(*.bmp;*.dib) |*.bmp;*.dib " +
+                                  "| JPEG(*.jpg;*.jpeg;*.jpe;*.jfif) | *.jpg;*.jpeg;*.jpe;*.jfif " +
+                                  "| GIF(*.gif) | *.gif " +
+                                  "| TIFF(*.tif;*.tiff) | *.tif;*.tiff" +
+                                  "| PNG(*.png) | *.png" +
+                                  "| ICO(*.ico) | *.ico" +
+                                  "| All Picture Files |*.bmp;*.dib;*.jpg;*.jpeg;*.jpe;*.jfif;*.gif;*.tif;*.tiff;*.png;*.ico" +
+                                  "| All Files | *.*";
                 if (openFile.ShowDialog() == DialogResult.OK)
                 {
                     Image img = new Bitmap(openFile.FileName);
@@ -279,6 +289,10 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                         MessageBox.Show("Chọn ảnh nhỏ hơn 1MB !");
                     }
                 }
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show(openFile.FileName.ToString() + "\nFILE vừa chọn không phải là ảnh hoặc định dạng ảnh chưa được hỗ trợ.","Error Box",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             catch (Exception er)
             {

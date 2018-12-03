@@ -15,19 +15,17 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
         {
             InitializeComponent();
         }
-        BLL.TinTimViec tin = new BLL.TinTimViec();
         DTO.TinTimViec tinDTO = new DTO.TinTimViec();
         DataTable dt = new DataTable();
         Int32 tinHienTai = 0;
         Int32 soTinTrenMotTrang = 10;
-
+        
         private void LoadData()
         {
             Int32 tinMin = tinHienTai;
             Int32 tinMax = tinHienTai + soTinTrenMotTrang;
-            
             dt.Clear();
-            dt = tin.UpdateTableDaDuyet();
+            dt = BLL.TinTimViec.Instance.UpdateTableDaDuyet();
             if (dt != null && dt.Rows.Count > 0)
             {
                 for (Int32 i = tinMin; i < tinMax; i++)
@@ -45,20 +43,19 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
         }
         private void QuanLyTinDaDuyet_Load(object sender, EventArgs e)
         {
-            LoadData();
-            //hide the scroll bar
-            ftpContainer.VerticalScroll.Maximum = 0;
-            ftpContainer.HorizontalScroll.Maximum = 0;
-            ftpContainer.AutoScroll = true;
+            
  
         }
         //hàm Click Event cho Mỗi Tin
         private void showDetail(object sender, EventArgs e)
         {
-            Tin shortTin = sender as Tin;
-            tinDTO = tin.getTinByMaTin(shortTin.Name);
-            thongTinChiTiet.LoadData(tinDTO);
+            thongTinChiTiet.Show();
             thongTinChiTiet.BringToFront();
+            Tin shortTin = sender as Tin;
+            tinDTO = BLL.TinTimViec.Instance.getTinByMaTin(shortTin.Name);
+
+            thongTinChiTiet.LoadData(tinDTO);
+
 
         }
 
@@ -104,10 +101,28 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
             }
         }
         //Call Active at FormChinh to UpdateData
-        public void Active()
+        public void Active(object sender, EventArgs e)
         {
-            thongTinChiTiet.SendToBack();
-            LoadData();
+            Tin[] controlsToRemove = ftpContainer.Controls.OfType<Tin>().ToArray();
+
+            tinHienTai -= (controlsToRemove.Count());
+
+            foreach (Tin tin in controlsToRemove)
+            {
+                ftpContainer.Controls.Remove(tin);
+                tin.Dispose();
+            }
+            thongTinChiTiet.Validated += Active;
+            if (BLL.TinTimViec.Instance.KiemTraKetNoi() != "")
+                MessageBox.Show(BLL.TinTimViec.Instance.KiemTraKetNoi());
+            else
+                LoadData();
+            //hide the scroll bar
+            ftpContainer.VerticalScroll.Maximum = 0;
+            ftpContainer.HorizontalScroll.Maximum = 0;
+            ftpContainer.AutoScroll = true;
+
+            ftpContainer.Select();
         }
 
     }

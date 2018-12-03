@@ -16,7 +16,6 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Them_Nguoi_Tim_Viec
         {
             InitializeComponent();
         }
-        BLL.TinTimViec tin = new BLL.TinTimViec();
         DTO.TinTimViec tinDTO = new DTO.TinTimViec();
         //txtDienThoai chi chap nhan so 0-9
         private void txtDienThoai_TextChanged(object sender, EventArgs e)
@@ -77,9 +76,18 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Them_Nguoi_Tim_Viec
         //Chọn ảnh và lưu ảnh (Byte[]) vào DTO.TinTimViec
         private void ptbAvatar_Click(object sender, EventArgs e)
         {
+            OpenFileDialog openFile = new OpenFileDialog();
             try
-            {
-                OpenFileDialog openFile = new OpenFileDialog();
+            {   
+                openFile.Filter = "Bitmap(*.bmp;*.dib) |*.bmp;*.dib " +
+                  "| JPEG(*.jpg;*.jpeg;*.jpe;*.jfif) | *.jpg;*.jpeg;*.jpe;*.jfif " +
+                  "| GIF(*.gif) | *.gif " +
+                  "| TIFF(*.tif;*.tiff) | *.tif;*.tiff" +
+                  "| PNG(*.png) | *.png" +
+                  "| ICO(*.ico) | *.ico" +
+                  "| All Picture Files |*.bmp;*.dib;*.jpg;*.jpeg;*.jpe;*.jfif;*.gif;*.tif;*.tiff;*.png;*.ico" +
+                  "| All Files | *.*";
+
                 if (openFile.ShowDialog() == DialogResult.OK)
                 {
                     Image img = new Bitmap(openFile.FileName);
@@ -94,9 +102,13 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Them_Nguoi_Tim_Viec
                     }
                 }
             }
-            catch(Exception)
+            catch(ArgumentException)
             {
-
+                MessageBox.Show(openFile.FileName.ToString() + "\nFILE vừa chọn không phải là ảnh hoặc định dạng ảnh chưa được hỗ trợ.", "Error Box", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show(er.ToString());
             }
         }
 
@@ -138,7 +150,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Them_Nguoi_Tim_Viec
                 tinDTO.ViTri = cboViTri.Text;
                 tinDTO.LoaiHinhCongViec = cboLoaiHinhCongViec.Text;
                 tinDTO.Luong = cboLuong.Text;
-                message = tin.Insert(tinDTO);
+                message = BLL.TinTimViec.Instance.Insert(tinDTO);
                 btnThem.Enabled = true;
                 btnNhapLai.Enabled = true;
                 MessageBox.Show(message);

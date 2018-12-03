@@ -128,7 +128,7 @@
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(0);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(583, 23);
-            this.txtHoTen.TabIndex = 3;
+            this.txtHoTen.TabIndex = 0;
             this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // lblNgaySinh
@@ -276,7 +276,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(0);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(100, 40);
-            this.btnThem.TabIndex = 4;
+            this.btnThem.TabIndex = 15;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -291,7 +291,7 @@
             this.btnNhapLai.Margin = new System.Windows.Forms.Padding(0);
             this.btnNhapLai.Name = "btnNhapLai";
             this.btnNhapLai.Size = new System.Drawing.Size(100, 40);
-            this.btnNhapLai.TabIndex = 4;
+            this.btnNhapLai.TabIndex = 16;
             this.btnNhapLai.Text = "Nhập Lại";
             this.btnNhapLai.UseVisualStyleBackColor = false;
             this.btnNhapLai.Click += new System.EventHandler(this.btnNhapLai_Click);
@@ -305,7 +305,7 @@
             this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(0);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(200, 23);
-            this.dtpNgaySinh.TabIndex = 5;
+            this.dtpNgaySinh.TabIndex = 1;
             // 
             // rboNam
             // 
@@ -317,7 +317,7 @@
             this.rboNam.Margin = new System.Windows.Forms.Padding(0);
             this.rboNam.Name = "rboNam";
             this.rboNam.Size = new System.Drawing.Size(55, 21);
-            this.rboNam.TabIndex = 6;
+            this.rboNam.TabIndex = 2;
             this.rboNam.TabStop = true;
             this.rboNam.Text = "Nam";
             this.rboNam.UseVisualStyleBackColor = true;
@@ -331,7 +331,7 @@
             this.rboNu.Margin = new System.Windows.Forms.Padding(0);
             this.rboNu.Name = "rboNu";
             this.rboNu.Size = new System.Drawing.Size(44, 21);
-            this.rboNu.TabIndex = 6;
+            this.rboNu.TabIndex = 3;
             this.rboNu.TabStop = true;
             this.rboNu.Text = "Nữ";
             this.rboNu.UseVisualStyleBackColor = true;
@@ -345,7 +345,7 @@
             this.rboKhac.Margin = new System.Windows.Forms.Padding(0);
             this.rboKhac.Name = "rboKhac";
             this.rboKhac.Size = new System.Drawing.Size(58, 21);
-            this.rboKhac.TabIndex = 6;
+            this.rboKhac.TabIndex = 4;
             this.rboKhac.TabStop = true;
             this.rboKhac.Text = "Khác";
             this.rboKhac.UseVisualStyleBackColor = true;
@@ -359,7 +359,7 @@
             this.txtDienThoai.Margin = new System.Windows.Forms.Padding(0);
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(504, 23);
-            this.txtDienThoai.TabIndex = 3;
+            this.txtDienThoai.TabIndex = 5;
             this.txtDienThoai.TextChanged += new System.EventHandler(this.txtDienThoai_TextChanged);
             // 
             // txtEmail
@@ -371,7 +371,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(0);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(504, 23);
-            this.txtEmail.TabIndex = 3;
+            this.txtEmail.TabIndex = 6;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
@@ -442,7 +442,7 @@
             this.cboTrinhDo.Margin = new System.Windows.Forms.Padding(0);
             this.cboTrinhDo.Name = "cboTrinhDo";
             this.cboTrinhDo.Size = new System.Drawing.Size(327, 24);
-            this.cboTrinhDo.TabIndex = 8;
+            this.cboTrinhDo.TabIndex = 10;
             // 
             // cboViTri
             // 
@@ -464,7 +464,7 @@
             this.cboViTri.Margin = new System.Windows.Forms.Padding(0);
             this.cboViTri.Name = "cboViTri";
             this.cboViTri.Size = new System.Drawing.Size(237, 24);
-            this.cboViTri.TabIndex = 8;
+            this.cboViTri.TabIndex = 12;
             // 
             // cboLuong
             // 
@@ -490,7 +490,7 @@
             this.cboLuong.Margin = new System.Windows.Forms.Padding(0);
             this.cboLuong.Name = "cboLuong";
             this.cboLuong.Size = new System.Drawing.Size(285, 24);
-            this.cboLuong.TabIndex = 8;
+            this.cboLuong.TabIndex = 14;
             // 
             // cboLoaiHinhCongViec
             // 
@@ -509,7 +509,7 @@
             this.cboLoaiHinhCongViec.Margin = new System.Windows.Forms.Padding(0);
             this.cboLoaiHinhCongViec.Name = "cboLoaiHinhCongViec";
             this.cboLoaiHinhCongViec.Size = new System.Drawing.Size(153, 24);
-            this.cboLoaiHinhCongViec.TabIndex = 8;
+            this.cboLoaiHinhCongViec.TabIndex = 13;
             // 
             // cboNoiLamViec
             // 
@@ -533,7 +533,7 @@
             this.cboNoiLamViec.Margin = new System.Windows.Forms.Padding(0);
             this.cboNoiLamViec.Name = "cboNoiLamViec";
             this.cboNoiLamViec.Size = new System.Drawing.Size(121, 24);
-            this.cboNoiLamViec.TabIndex = 8;
+            this.cboNoiLamViec.TabIndex = 11;
             // 
             // cboNamKinhNghiem
             // 
@@ -556,7 +556,7 @@
             this.cboNamKinhNghiem.Margin = new System.Windows.Forms.Padding(0);
             this.cboNamKinhNghiem.Name = "cboNamKinhNghiem";
             this.cboNamKinhNghiem.Size = new System.Drawing.Size(76, 24);
-            this.cboNamKinhNghiem.TabIndex = 8;
+            this.cboNamKinhNghiem.TabIndex = 9;
             // 
             // panel1
             // 
