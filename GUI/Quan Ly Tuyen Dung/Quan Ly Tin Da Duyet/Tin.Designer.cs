@@ -122,7 +122,7 @@
             this.label4.Size = new System.Drawing.Size(42, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Vị Trí:";
-            
+
             // 
             // lblViTri
             // 
@@ -143,7 +143,7 @@
             this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 7;
             this.label6.Text = "Số lượng:";
-           
+
             // 
             // lblNoiLamViec
             // 

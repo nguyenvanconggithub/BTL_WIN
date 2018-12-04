@@ -43,8 +43,12 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
         }
         private void QuanLyTinDaDuyet_Load(object sender, EventArgs e)
         {
-            
- 
+            thongTinChiTiet.Validated += Active;
+
+            //hide the scroll bar
+            ftpContainer.VerticalScroll.Maximum = 0;
+            ftpContainer.HorizontalScroll.Maximum = 0;
+            ftpContainer.AutoScroll = true;
         }
         //hàm Click Event cho Mỗi Tin
         private void showDetail(object sender, EventArgs e)
@@ -112,15 +116,12 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet
                 ftpContainer.Controls.Remove(tin);
                 tin.Dispose();
             }
-            thongTinChiTiet.Validated += Active;
+            
             if (BLL.TinTimViec.Instance.KiemTraKetNoi() != "")
                 MessageBox.Show(BLL.TinTimViec.Instance.KiemTraKetNoi());
             else
                 LoadData();
-            //hide the scroll bar
-            ftpContainer.VerticalScroll.Maximum = 0;
-            ftpContainer.HorizontalScroll.Maximum = 0;
-            ftpContainer.AutoScroll = true;
+
 
             ftpContainer.Select();
         }

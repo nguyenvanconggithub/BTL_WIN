@@ -116,6 +116,7 @@
             // 
             // timKiem
             // 
+            this.timKiem.BackColor = System.Drawing.Color.White;
             this.timKiem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.timKiem.Location = new System.Drawing.Point(0, 0);
             this.timKiem.Name = "timKiem";
@@ -124,6 +125,7 @@
             // 
             // quanLyTinDaDuyet_TuyenDung
             // 
+            this.quanLyTinDaDuyet_TuyenDung.BackColor = System.Drawing.Color.White;
             this.quanLyTinDaDuyet_TuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.quanLyTinDaDuyet_TuyenDung.Location = new System.Drawing.Point(0, 0);
             this.quanLyTinDaDuyet_TuyenDung.Name = "quanLyTinDaDuyet_TuyenDung";
@@ -132,6 +134,7 @@
             // 
             // duyetTinMoi_TuyenDung
             // 
+            this.duyetTinMoi_TuyenDung.AutoScroll = true;
             this.duyetTinMoi_TuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.duyetTinMoi_TuyenDung.Location = new System.Drawing.Point(0, 0);
             this.duyetTinMoi_TuyenDung.Name = "duyetTinMoi_TuyenDung";
@@ -140,6 +143,7 @@
             // 
             // themTinTuyenDung
             // 
+            this.themTinTuyenDung.AutoScroll = true;
             this.themTinTuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.themTinTuyenDung.Location = new System.Drawing.Point(0, 0);
             this.themTinTuyenDung.Name = "themTinTuyenDung";
@@ -148,6 +152,7 @@
             // 
             // quanLyTinDaDuyet_TimViec
             // 
+            this.quanLyTinDaDuyet_TimViec.BackColor = System.Drawing.Color.White;
             this.quanLyTinDaDuyet_TimViec.Dock = System.Windows.Forms.DockStyle.Fill;
             this.quanLyTinDaDuyet_TimViec.Location = new System.Drawing.Point(0, 0);
             this.quanLyTinDaDuyet_TimViec.Name = "quanLyTinDaDuyet_TimViec";
@@ -158,22 +163,28 @@
             // 
             this.duyetTinMoi_TimViec.BackColor = System.Drawing.Color.White;
             this.duyetTinMoi_TimViec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.duyetTinMoi_TimViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.duyetTinMoi_TimViec.Location = new System.Drawing.Point(0, 0);
+            this.duyetTinMoi_TimViec.Margin = new System.Windows.Forms.Padding(0);
             this.duyetTinMoi_TimViec.Name = "duyetTinMoi_TimViec";
             this.duyetTinMoi_TimViec.Size = new System.Drawing.Size(738, 561);
             this.duyetTinMoi_TimViec.TabIndex = 1;
             // 
             // themNguoiTimViec
             // 
+            this.themNguoiTimViec.AutoScroll = true;
+            this.themNguoiTimViec.BackColor = System.Drawing.Color.White;
             this.themNguoiTimViec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.themNguoiTimViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.themNguoiTimViec.Location = new System.Drawing.Point(0, 0);
+            this.themNguoiTimViec.Margin = new System.Windows.Forms.Padding(0);
             this.themNguoiTimViec.Name = "themNguoiTimViec";
             this.themNguoiTimViec.Size = new System.Drawing.Size(738, 561);
             this.themNguoiTimViec.TabIndex = 0;
             // 
             // pnlNavigation
             // 
-            this.pnlNavigation.BackColor = System.Drawing.Color.Transparent;
+            this.pnlNavigation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.pnlNavigation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlNavigation.Controls.Add(this.pnlThemXoaTaiKhoan);
             this.pnlNavigation.Controls.Add(this.pnlTimKiem);
@@ -181,6 +192,7 @@
             this.pnlNavigation.Controls.Add(this.pnlQuanLyNguoiTimViec);
             this.pnlNavigation.Controls.Add(this.pnlThongTinTaiKhoan);
             this.pnlNavigation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlNavigation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.pnlNavigation.Location = new System.Drawing.Point(0, 0);
             this.pnlNavigation.Margin = new System.Windows.Forms.Padding(0);
             this.pnlNavigation.Name = "pnlNavigation";
@@ -199,8 +211,9 @@
             // 
             // btnThemXoaTaiKhoan
             // 
-            this.btnThemXoaTaiKhoan.BackColor = System.Drawing.Color.LightGray;
+            this.btnThemXoaTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.btnThemXoaTaiKhoan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThemXoaTaiKhoan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btnThemXoaTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemXoaTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThemXoaTaiKhoan.Image = global::GUI.Properties.Resources.ThemXoaAcc;
@@ -229,8 +242,9 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.LightGray;
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.btnTimKiem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTimKiem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTimKiem.Image = global::GUI.Properties.Resources.TimKiem_ICON;
@@ -310,8 +324,9 @@
             // 
             // btnQuanLyTuyenDung
             // 
-            this.btnQuanLyTuyenDung.BackColor = System.Drawing.Color.LightGray;
+            this.btnQuanLyTuyenDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.btnQuanLyTuyenDung.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQuanLyTuyenDung.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btnQuanLyTuyenDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuanLyTuyenDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnQuanLyTuyenDung.Image = global::GUI.Properties.Resources.QuanLyTuyenDung_icon;
@@ -390,8 +405,9 @@
             // 
             // btnQuanLyNguoiTimViec
             // 
-            this.btnQuanLyNguoiTimViec.BackColor = System.Drawing.Color.LightGray;
+            this.btnQuanLyNguoiTimViec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.btnQuanLyNguoiTimViec.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQuanLyNguoiTimViec.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btnQuanLyNguoiTimViec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuanLyNguoiTimViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnQuanLyNguoiTimViec.Image = global::GUI.Properties.Resources.NguoiTimViec_icon;
@@ -478,10 +494,12 @@
             // 
             // ptbAvatar_TaiKhoan
             // 
+            this.ptbAvatar_TaiKhoan.InitialImage = global::GUI.Properties.Resources.image_PictureBox;
             this.ptbAvatar_TaiKhoan.Location = new System.Drawing.Point(0, 0);
             this.ptbAvatar_TaiKhoan.Margin = new System.Windows.Forms.Padding(0);
             this.ptbAvatar_TaiKhoan.Name = "ptbAvatar_TaiKhoan";
             this.ptbAvatar_TaiKhoan.Size = new System.Drawing.Size(80, 106);
+            this.ptbAvatar_TaiKhoan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAvatar_TaiKhoan.TabIndex = 0;
             this.ptbAvatar_TaiKhoan.TabStop = false;
             // 
@@ -493,6 +511,7 @@
             this.ClientSize = new System.Drawing.Size(1008, 561);
             this.Controls.Add(this.tableLayoutPanel);
             this.Name = "FormChinh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormChinh";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormChinh_FormClosed);
             this.Load += new System.EventHandler(this.FormChinh_Load);

@@ -219,20 +219,20 @@ namespace BLL
             bool success = DAL.DataTinTuyenDung.DaTa.ExecuteNonQuery(cmd);
             if (success == true)
                 return "Lưu Thành Công";
-            return "a";
+            return "";
         }
-        public void TimKiem(DTO.TinTuyenDung search)
+        public DataTable TimKiem(DTO.TinTuyenDung search)
         {
             try
             {
-                string cmdtext = "select * from TinTuyenDung where NganhNghe = N'" + search.NganhNghe + "' AND NoiLamViec = N'" + search.NoiLamViec + "' AND LoaiHinhCongViec = N'" + search.LoaiHinhCongViec + "' AND TrinhDo = N'" + search.TrinhDo + "' AND NamKinhNghiem = N'" + search.NamKinhNghiem + "' AND Luong = N'" + search.Luong + "'AND GioiTinh = N'" + search.YeuCauGioiTinh + "' ";
-                SqlCommand cmd = new SqlCommand(cmdtext);
-                DataTable table = new DataTable(); search.DiaChiCT = "%";
+                string cmdtext = "select * from TinTuyenDung where NganhNghe LIKE N'" + search.NganhNghe + "' AND NoiLamViec LIKE N'" + search.NoiLamViec + "' AND LoaiHinhCongViec LIKE N'" + search.LoaiHinhCongViec + "' AND TrinhDo LIKE N'" + search.TrinhDo + "' AND NamKinhNghiem LIKE N'" + search.NamKinhNghiem + "' AND Luong LIKE N'" + search.Luong + "'AND YeuCauGioiTinh LIKE N'" + search.YeuCauGioiTinh + "' ";
+                DataTable table = new DataTable();
                 dt = DAL.DataTinTuyenDung.DaTa.TimKiemTinTuyenDung(cmdtext);
+                return dt;
             }
             catch (Exception e)
             {
-                
+                return null;
             }
         }
        

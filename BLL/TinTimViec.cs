@@ -70,14 +70,15 @@ namespace BLL
         {
             try
             {
-                string cmdString = "SELECT * FROM TinTimViec"
-                              + "WHERE NganhNghe LIKE @NganhNghe"
-                              + "AND NoiLamViec LIKE @NoiLamViec"
-                              + "AND LoaiHinhCongViec LIKE @LoaiHinhCongViec"
-                              + "AND TrinhDo LIKE @TrinhDo"
-                              + "AND NamKinhNghiem LIKE @NamKinhNghiem"
-                              + "AND GioiTinh LIKE @GioiTinh"
-                              + "AND Luong LIKE @Luong";
+                string cmdString = "SELECT * FROM TinTimViec " +
+                    "WHERE NganhNghe LIKE @NganhNghe " +
+                    "AND NoiLamViec LIKE @NoiLamViec " +
+                    "AND LoaiHinhCongViec LIKE @LoaiHinhCongViec " +
+                    "AND TrinhDo LIKE @TrinhDo " +
+                    "AND NamKinhNghiem LIKE @NamKinhNghiem " +
+                    "AND GioiTinh LIKE @GioiTinh " +
+                    "AND Luong LIKE @Luong " +
+                    "AND DaDuyet = 'true'";
                 SqlCommand cmd = new SqlCommand(cmdString);
                 cmd.Parameters.AddWithValue("@NganhNghe", search.NganhNghe);
                 cmd.Parameters.AddWithValue("@NoiLamViec", search.NoiLamViec);

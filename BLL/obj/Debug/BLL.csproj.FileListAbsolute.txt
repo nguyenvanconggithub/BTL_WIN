@@ -9,3 +9,25 @@ D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\BLL\obj\Debug\
 D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\BLL\obj\Debug\BLL.pdb
 D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\BLL\bin\Debug\DTO.dll
 D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\BLL\bin\Debug\DTO.pdb
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\bin\Debug\BLL.dll
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\bin\Debug\BLL.pdb
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\bin\Debug\DAL.dll
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\bin\Debug\DTO.dll
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\bin\Debug\DAL.pdb
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\bin\Debug\DTO.pdb
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\obj\Debug\BLL.dll
+C:\Users\Admin\Desktop\new\BTL_WIN\BLL\obj\Debug\BLL.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\bin\Debug\BLL.dll
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\bin\Debug\BLL.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\bin\Debug\DAL.dll
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\bin\Debug\DTO.dll
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\bin\Debug\DAL.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\bin\Debug\DTO.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\obj\Debug\BLL.dll
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\obj\Debug\BLL.pdb

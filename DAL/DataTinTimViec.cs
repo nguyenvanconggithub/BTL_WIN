@@ -23,8 +23,10 @@ namespace DAL
         {
             try
             {
+
+                //SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
                 SqlConnection conn = new SqlConnection(@"Data Source=.;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
-                if(conn.State == ConnectionState.Closed)
+                if (conn.State == ConnectionState.Closed)
                     conn.Open();
                 return conn;
             }
@@ -105,11 +107,11 @@ namespace DAL
         public DataTable timKiem(SqlCommand cmd)
         {
 
-            if (getConnect() != null)
+            /*if (getConnect() != null)
             {
 
                 try
-                {
+                {*/
                     cmd.Connection = getConnect();
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataView dv = new DataView();
@@ -119,13 +121,13 @@ namespace DAL
                     dv.Sort = "ThoiGianDuyet DESC"; // Xem Tin Moi Nhat Truoc
                     dt = dv.ToTable();
                     return dt;
-                }
+                /*}
                 catch (Exception)
                 {
                     return null;
                 }
             }
-            return null;
+            return null;*/
         }
         public string ExcuteNonQuery(SqlCommand command)
         {

@@ -139,17 +139,23 @@
     <Compile Include="Them Xoa Tai Khoan\ThemXoaTaiKhoan.Designer.cs">
       <DependentUpon>ThemXoaTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tim Kiem\KetQuaTimKiem.cs">
+    <Compile Include="Tim Kiem\Tim Viec\KetQuaTimKiem_TimViec.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Tim Kiem\KetQuaTimKiem.Designer.cs">
-      <DependentUpon>KetQuaTimKiem.cs</DependentUpon>
+    <Compile Include="Tim Kiem\Tim Viec\KetQuaTimKiem_TimViec.Designer.cs">
+      <DependentUpon>KetQuaTimKiem_TimViec.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tim Kiem\ThongTinChiTiet.cs">
+    <Compile Include="Tim Kiem\Tim Viec\ThongTinChiTiet_TimViec.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Tim Kiem\ThongTinChiTiet.Designer.cs">
-      <DependentUpon>ThongTinChiTiet.cs</DependentUpon>
+    <Compile Include="Tim Kiem\Tim Viec\ThongTinChiTiet_TimViec.Designer.cs">
+      <DependentUpon>ThongTinChiTiet_TimViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tim Kiem\Tim Viec\Tin_TimViec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tim Kiem\Tim Viec\Tin_TimViec.Designer.cs">
+      <DependentUpon>Tin_TimViec.cs</DependentUpon>
     </Compile>
     <Compile Include="Tim Kiem\TimKiem.cs">
       <SubType>UserControl</SubType>
@@ -157,11 +163,23 @@
     <Compile Include="Tim Kiem\TimKiem.Designer.cs">
       <DependentUpon>TimKiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tim Kiem\Tin.cs">
+    <Compile Include="Tim Kiem\Tuyen Dung\KetQuaTimKiem_TuyenDung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Tim Kiem\Tin.Designer.cs">
-      <DependentUpon>Tin.cs</DependentUpon>
+    <Compile Include="Tim Kiem\Tuyen Dung\KetQuaTimKiem_TuyenDung.Designer.cs">
+      <DependentUpon>KetQuaTimKiem_TuyenDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tim Kiem\Tuyen Dung\ThongTinChiTiet_TuyenDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tim Kiem\Tuyen Dung\ThongTinChiTiet_TuyenDung.Designer.cs">
+      <DependentUpon>ThongTinChiTiet_TuyenDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tim Kiem\Tuyen Dung\Tin_DuyenDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tim Kiem\Tuyen Dung\Tin_DuyenDung.Designer.cs">
+      <DependentUpon>Tin_DuyenDung.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormChinh.resx">
       <DependentUpon>FormChinh.cs</DependentUpon>
@@ -207,11 +225,26 @@
     <EmbeddedResource Include="Them Xoa Tai Khoan\ThemXoaTaiKhoan.resx">
       <DependentUpon>ThemXoaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tim Kiem\Tim Viec\KetQuaTimKiem_TimViec.resx">
+      <DependentUpon>KetQuaTimKiem_TimViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim Kiem\Tim Viec\ThongTinChiTiet_TimViec.resx">
+      <DependentUpon>ThongTinChiTiet_TimViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim Kiem\Tim Viec\Tin_TimViec.resx">
+      <DependentUpon>Tin_TimViec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tim Kiem\TimKiem.resx">
       <DependentUpon>TimKiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tim Kiem\Tin.resx">
-      <DependentUpon>Tin.cs</DependentUpon>
+    <EmbeddedResource Include="Tim Kiem\Tuyen Dung\KetQuaTimKiem_TuyenDung.resx">
+      <DependentUpon>KetQuaTimKiem_TuyenDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim Kiem\Tuyen Dung\ThongTinChiTiet_TuyenDung.resx">
+      <DependentUpon>ThongTinChiTiet_TuyenDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim Kiem\Tuyen Dung\Tin_DuyenDung.resx">
+      <DependentUpon>Tin_DuyenDung.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -251,5 +284,6 @@
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

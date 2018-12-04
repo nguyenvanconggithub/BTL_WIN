@@ -93,7 +93,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(0);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 40);
-            this.btnXoa.TabIndex = 33;
+            this.btnXoa.TabIndex = 14;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -108,7 +108,7 @@
             this.btnSua.Margin = new System.Windows.Forms.Padding(0);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(100, 40);
-            this.btnSua.TabIndex = 32;
+            this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -440,7 +440,7 @@
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(0);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(504, 23);
-            this.txtHoTen.TabIndex = 34;
+            this.txtHoTen.TabIndex = 0;
             this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // cboGioiTinh
@@ -456,7 +456,7 @@
             this.cboGioiTinh.Margin = new System.Windows.Forms.Padding(0);
             this.cboGioiTinh.Name = "cboGioiTinh";
             this.cboGioiTinh.Size = new System.Drawing.Size(95, 24);
-            this.cboGioiTinh.TabIndex = 35;
+            this.cboGioiTinh.TabIndex = 1;
             // 
             // dtpNgaySinh
             // 
@@ -466,7 +466,7 @@
             this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(0);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(183, 23);
-            this.dtpNgaySinh.TabIndex = 36;
+            this.dtpNgaySinh.TabIndex = 2;
             // 
             // txtDienThoai
             // 
@@ -475,7 +475,7 @@
             this.txtDienThoai.Margin = new System.Windows.Forms.Padding(0);
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(483, 23);
-            this.txtDienThoai.TabIndex = 34;
+            this.txtDienThoai.TabIndex = 3;
             this.txtDienThoai.TextChanged += new System.EventHandler(this.txtDienThoai_TextChanged);
             // 
             // txtEmail
@@ -485,7 +485,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(0);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(504, 23);
-            this.txtEmail.TabIndex = 34;
+            this.txtEmail.TabIndex = 4;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
@@ -496,7 +496,7 @@
             this.rtbDiaChi.Margin = new System.Windows.Forms.Padding(0);
             this.rtbDiaChi.Name = "rtbDiaChi";
             this.rtbDiaChi.Size = new System.Drawing.Size(604, 23);
-            this.rtbDiaChi.TabIndex = 37;
+            this.rtbDiaChi.TabIndex = 5;
             this.rtbDiaChi.Text = "";
             this.rtbDiaChi.TextChanged += new System.EventHandler(this.rtbDiaChi_TextChanged);
             // 
@@ -533,7 +533,7 @@
             this.cboNganhNghe.Margin = new System.Windows.Forms.Padding(0);
             this.cboNganhNghe.Name = "cboNganhNghe";
             this.cboNganhNghe.Size = new System.Drawing.Size(317, 24);
-            this.cboNganhNghe.TabIndex = 35;
+            this.cboNganhNghe.TabIndex = 6;
             this.cboNganhNghe.SelectedIndexChanged += new System.EventHandler(this.cboNganhNghe_SelectedIndexChanged);
             // 
             // cboSoNamKinhNghiem
@@ -555,7 +555,7 @@
             this.cboSoNamKinhNghiem.Margin = new System.Windows.Forms.Padding(0);
             this.cboSoNamKinhNghiem.Name = "cboSoNamKinhNghiem";
             this.cboSoNamKinhNghiem.Size = new System.Drawing.Size(95, 24);
-            this.cboSoNamKinhNghiem.TabIndex = 35;
+            this.cboSoNamKinhNghiem.TabIndex = 7;
             // 
             // cboDiaDiemLamViec
             // 
@@ -578,7 +578,7 @@
             this.cboDiaDiemLamViec.Margin = new System.Windows.Forms.Padding(0);
             this.cboDiaDiemLamViec.Name = "cboDiaDiemLamViec";
             this.cboDiaDiemLamViec.Size = new System.Drawing.Size(104, 24);
-            this.cboDiaDiemLamViec.TabIndex = 35;
+            this.cboDiaDiemLamViec.TabIndex = 9;
             // 
             // cboTrinhDo
             // 
@@ -597,7 +597,7 @@
             this.cboTrinhDo.Margin = new System.Windows.Forms.Padding(0);
             this.cboTrinhDo.Name = "cboTrinhDo";
             this.cboTrinhDo.Size = new System.Drawing.Size(288, 24);
-            this.cboTrinhDo.TabIndex = 35;
+            this.cboTrinhDo.TabIndex = 8;
             // 
             // cboMucLuongMongMuon
             // 
@@ -623,7 +623,7 @@
             this.cboMucLuongMongMuon.Margin = new System.Windows.Forms.Padding(0);
             this.cboMucLuongMongMuon.Name = "cboMucLuongMongMuon";
             this.cboMucLuongMongMuon.Size = new System.Drawing.Size(200, 24);
-            this.cboMucLuongMongMuon.TabIndex = 35;
+            this.cboMucLuongMongMuon.TabIndex = 12;
             // 
             // cboViTriMongMuon
             // 
@@ -645,7 +645,7 @@
             this.cboViTriMongMuon.Margin = new System.Windows.Forms.Padding(0);
             this.cboViTriMongMuon.Name = "cboViTriMongMuon";
             this.cboViTriMongMuon.Size = new System.Drawing.Size(232, 24);
-            this.cboViTriMongMuon.TabIndex = 35;
+            this.cboViTriMongMuon.TabIndex = 10;
             // 
             // cboLoaiHinhCongViec
             // 
@@ -663,7 +663,7 @@
             this.cboLoaiHinhCongViec.Margin = new System.Windows.Forms.Padding(0);
             this.cboLoaiHinhCongViec.Name = "cboLoaiHinhCongViec";
             this.cboLoaiHinhCongViec.Size = new System.Drawing.Size(160, 24);
-            this.cboLoaiHinhCongViec.TabIndex = 35;
+            this.cboLoaiHinhCongViec.TabIndex = 11;
             // 
             // panel1
             // 

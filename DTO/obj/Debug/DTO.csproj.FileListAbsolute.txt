@@ -4,3 +4,14 @@ D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\DTO\obj\Debug\
 D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\DTO\obj\Debug\DTO.dll
 D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\DTO\obj\Debug\DTO.pdb
 D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\new\BTL_WIN\DTO\bin\Debug\DTO.dll
+C:\Users\Admin\Desktop\new\BTL_WIN\DTO\bin\Debug\DTO.pdb
+C:\Users\Admin\Desktop\new\BTL_WIN\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\new\BTL_WIN\DTO\obj\Debug\DTO.dll
+C:\Users\Admin\Desktop\new\BTL_WIN\DTO\obj\Debug\DTO.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DTO\bin\Debug\DTO.dll
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DTO\bin\Debug\DTO.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DTO\obj\Debug\DTO.dll
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DTO\obj\Debug\DTO.pdb

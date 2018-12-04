@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -11,42 +12,45 @@ namespace GUI
 {
     public partial class FormChinh : Form
     {
+        DTO.TaiKhoan tk = new DTO.TaiKhoan();
         bool lockStatus = false;
+
         public FormChinh()
         {
             InitializeComponent();
         }
 
+        public FormChinh(DTO.TaiKhoan taiKhoan)
+        {
+            tk = taiKhoan;
+            InitializeComponent();
+        }
+
         private void FormChinh_Load(object sender, EventArgs e)
         {
-            //Setup Color in Navigation
-            pnlNavigation.BackColor = Color.FromArgb(68, 68, 68);
-
-            //set all text in Nagigation to RGB(233,213,213)
-            pnlNavigation.ForeColor = Color.FromArgb(233, 213, 213);
-
-            //set BackColor of MenuLevel1 in Navigation to RGB(73,66,66) && borderColor to RGB(142,140,140) *BUTTON MENU1*
-            btnQuanLyNguoiTimViec.BackColor = Color.FromArgb(73, 66, 66);
-            btnQuanLyNguoiTimViec.FlatAppearance.BorderColor = Color.FromArgb(142, 140, 140);
-            btnQuanLyTuyenDung.BackColor = Color.FromArgb(73, 66, 66);
-            btnQuanLyTuyenDung.FlatAppearance.BorderColor = Color.FromArgb(142, 140, 140);
-            btnTimKiem.BackColor = Color.FromArgb(73, 66, 66);
-            btnTimKiem.FlatAppearance.BorderColor = Color.FromArgb(142, 140, 140);
-            btnThemXoaTaiKhoan.BackColor = Color.FromArgb(73, 66, 66);
-            btnThemXoaTaiKhoan.FlatAppearance.BorderColor = Color.FromArgb(142, 140, 140);
-
-            //set Color of MenuLevel2 in Navigation to RGB(68,68,68) *BUTTON MENU2*
-            btnThemNguoiTimViec.BackColor = Color.FromArgb(68, 68, 68);
-            btnDuyetTinMoi_TimViec.BackColor = Color.FromArgb(68, 68, 68);
-            btnQuanLyTinDaDuyet_TimViec.BackColor = Color.FromArgb(68, 68, 68);
-            btnThemTinTuyenDung.BackColor = Color.FromArgb(68, 68, 68);
-            btnDuyetTinMoi_TuyenDung.BackColor = Color.FromArgb(68, 68, 68);
-            btnQuanLyTinDaDuyet_TuyenDung.BackColor = Color.FromArgb(68, 68, 68);
-
-            //hide the VerticalScrollBar
+            //hide scrollbar
             pnlNavigation.VerticalScroll.Maximum = 0;
             pnlNavigation.AutoScroll = true;
 
+            foreach(UserControl uc in pnlContent.Controls)
+            {
+                uc.Hide();
+            }
+            lblTaiKhoan.Text = tk.Acc;
+            
+            if (tk.IsAdmin)
+            {
+                lblQuyenTruyCap.Text = "ADMIN";
+                
+            }
+            else
+            {
+                lblQuyenTruyCap.Text = "Nhân Viên";
+                pnlThemXoaTaiKhoan.Hide();
+                themXoaTaiKhoan.Hide();
+            }
+            if (tk.Avatar != null)
+                ptbAvatar_TaiKhoan.Image = Image.FromStream(new MemoryStream(tk.Avatar));
             txtMatKhau.Hide();
         }
 
@@ -88,13 +92,17 @@ namespace GUI
         
         private void btnThemNguoiTimViec_Click(object sender, EventArgs e)
         {
+            
+            themNguoiTimViec.Show();
             themNguoiTimViec.BringToFront();
+            pnlContent.Select();
             setHolderButton(sender);
             //themNguoiTimViec.Update();
         }
 
         private void btnDuyetTinMoi_TimViec_Click(object sender, EventArgs e)
         {
+            duyetTinMoi_TimViec.Show();
             duyetTinMoi_TimViec.BringToFront();
             setHolderButton(sender);
             duyetTinMoi_TimViec.Active();
@@ -103,6 +111,7 @@ namespace GUI
 
         private void btnQuanLyTinDaDuyet_TimViec_Click(object sender, EventArgs e)
         {
+            quanLyTinDaDuyet_TimViec.Show();
             quanLyTinDaDuyet_TimViec.BringToFront();
             setHolderButton(sender);
             quanLyTinDaDuyet_TimViec.Active(sender, e);
@@ -110,6 +119,7 @@ namespace GUI
 
         private void btnThemTinTuyenDung_Click(object sender, EventArgs e)
         {
+            themTinTuyenDung.Show();
             themTinTuyenDung.BringToFront();
             setHolderButton(sender);
 
@@ -117,6 +127,7 @@ namespace GUI
 
         private void btnDuyetTinMoi_TuyenDung_Click(object sender, EventArgs e)
         {
+            duyetTinMoi_TuyenDung.Show();
             duyetTinMoi_TuyenDung.Active();
             duyetTinMoi_TuyenDung.BringToFront();
             setHolderButton(sender);
@@ -125,6 +136,7 @@ namespace GUI
 
         private void btnQuanLyTinDaDuyet_TuyenDung_Click(object sender, EventArgs e)
         {
+            quanLyTinDaDuyet_TuyenDung.Show();
             quanLyTinDaDuyet_TuyenDung.Active(sender,e);
             quanLyTinDaDuyet_TuyenDung.BringToFront();
             setHolderButton(sender);
@@ -133,12 +145,15 @@ namespace GUI
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
+            timKiem.Active();
+            timKiem.Show();
             timKiem.BringToFront();
             clearButtonColor();
         }
 
         private void btnThemXoaTaiKhoan_Click(object sender, EventArgs e)
         {
+            themXoaTaiKhoan.Show();
             themXoaTaiKhoan.BringToFront();
             clearButtonColor();
         }
@@ -160,10 +175,10 @@ namespace GUI
                 txtMatKhau.Show();
             }
            
-            if (lockStatus == true && txtMatKhau.Text != "password" && txtMatKhau.Text != "Nhập mật khẩu cho: " + lblTaiKhoan.Text)
+            if (lockStatus == true && txtMatKhau.Text != tk.Pass && txtMatKhau.Text != "Nhập mật khẩu cho: " + lblTaiKhoan.Text)
                 txtMatKhau.ForeColor = Color.Red;
             //enable all content when password is correct
-            if(lockStatus == true && txtMatKhau.Text == "password")
+            if(lockStatus == true && txtMatKhau.Text == tk.Pass)
             {
                 ptbLock.Image = Properties.Resources.unlock;
                 lockStatus = false;

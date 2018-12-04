@@ -4,3 +4,21 @@ D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\DAL\obj\Debug\
 D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\DAL\obj\Debug\DAL.dll
 D:\VS Code\Quản Lý Người Tìm Việc - Việc Tìm Người\DAL\obj\Debug\DAL.pdb
+C:\Users\Admin\Desktop\new\BTL_WIN\DAL\bin\Debug\DAL.dll
+C:\Users\Admin\Desktop\new\BTL_WIN\DAL\bin\Debug\DAL.pdb
+C:\Users\Admin\Desktop\new\BTL_WIN\DAL\bin\Debug\DTO.dll
+C:\Users\Admin\Desktop\new\BTL_WIN\DAL\bin\Debug\DTO.pdb
+C:\Users\Admin\Desktop\new\BTL_WIN\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\new\BTL_WIN\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\new\BTL_WIN\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Admin\Desktop\new\BTL_WIN\DAL\obj\Debug\DAL.dll
+C:\Users\Admin\Desktop\new\BTL_WIN\DAL\obj\Debug\DAL.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\bin\Debug\DAL.dll
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\bin\Debug\DAL.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\bin\Debug\DTO.dll
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\bin\Debug\DTO.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\obj\Debug\DAL.dll
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\obj\Debug\DAL.pdb
+D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
