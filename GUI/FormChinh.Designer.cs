@@ -30,14 +30,6 @@
         {
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.pnlContent = new System.Windows.Forms.Panel();
-            this.themXoaTaiKhoan = new GUI.Them_Xoa_Tai_Khoan.ThemXoaTaiKhoan();
-            this.timKiem = new GUI.Tim_Kiem.TimKiem();
-            this.quanLyTinDaDuyet_TuyenDung = new GUI.Quan_Ly_Tuyen_Dung.Quan_Ly_Tin_Da_Duyet.QuanLyTinDaDuyet();
-            this.duyetTinMoi_TuyenDung = new GUI.Quan_Ly_Tuyen_Dung.Duyet_Tin_Moi.DuyetTinMoi();
-            this.themTinTuyenDung = new GUI.Quan_Ly_Tuyen_Dung.Them_Tin_Tuyen_Dung.ThemTinTuyenDung();
-            this.quanLyTinDaDuyet_TimViec = new GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet.QuanLyTinDaDuyet();
-            this.duyetTinMoi_TimViec = new GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi.DuyetTinMoi();
-            this.themNguoiTimViec = new GUI.Quan_Ly_Nguoi_Tim_Viec.Them_Nguoi_Tim_Viec.ThemNguoiTimViec();
             this.pnlNavigation = new System.Windows.Forms.Panel();
             this.pnlThemXoaTaiKhoan = new System.Windows.Forms.Panel();
             this.btnThemXoaTaiKhoan = new System.Windows.Forms.Button();
@@ -60,6 +52,14 @@
             this.lblQuyenTruyCap = new System.Windows.Forms.Label();
             this.lblTaiKhoan = new System.Windows.Forms.Label();
             this.ptbAvatar_TaiKhoan = new System.Windows.Forms.PictureBox();
+            this.themXoaTaiKhoan = new GUI.Them_Xoa_Tai_Khoan.ThemXoaTaiKhoan();
+            this.timKiem = new GUI.Tim_Kiem.TimKiem();
+            this.quanLyTinDaDuyet_TuyenDung = new GUI.Quan_Ly_Tuyen_Dung.Quan_Ly_Tin_Da_Duyet.QuanLyTinDaDuyet();
+            this.duyetTinMoi_TuyenDung = new GUI.Quan_Ly_Tuyen_Dung.Duyet_Tin_Moi.DuyetTinMoi();
+            this.themTinTuyenDung = new GUI.Quan_Ly_Tuyen_Dung.Them_Tin_Tuyen_Dung.ThemTinTuyenDung();
+            this.quanLyTinDaDuyet_TimViec = new GUI.Quan_Ly_Nguoi_Tim_Viec.Quan_Ly_Tin_Da_Duyet.QuanLyTinDaDuyet();
+            this.duyetTinMoi_TimViec = new GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi.DuyetTinMoi();
+            this.themNguoiTimViec = new GUI.Quan_Ly_Nguoi_Tim_Viec.Them_Nguoi_Tim_Viec.ThemNguoiTimViec();
             this.tableLayoutPanel.SuspendLayout();
             this.pnlContent.SuspendLayout();
             this.pnlNavigation.SuspendLayout();
@@ -104,83 +104,6 @@
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(738, 561);
             this.pnlContent.TabIndex = 1;
-            // 
-            // themXoaTaiKhoan
-            // 
-            this.themXoaTaiKhoan.BackColor = System.Drawing.Color.White;
-            this.themXoaTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.themXoaTaiKhoan.Location = new System.Drawing.Point(0, 0);
-            this.themXoaTaiKhoan.Name = "themXoaTaiKhoan";
-            this.themXoaTaiKhoan.Size = new System.Drawing.Size(738, 561);
-            this.themXoaTaiKhoan.TabIndex = 7;
-            // 
-            // timKiem
-            // 
-            this.timKiem.BackColor = System.Drawing.Color.White;
-            this.timKiem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.timKiem.Location = new System.Drawing.Point(0, 0);
-            this.timKiem.Name = "timKiem";
-            this.timKiem.Size = new System.Drawing.Size(738, 561);
-            this.timKiem.TabIndex = 6;
-            // 
-            // quanLyTinDaDuyet_TuyenDung
-            // 
-            this.quanLyTinDaDuyet_TuyenDung.BackColor = System.Drawing.Color.White;
-            this.quanLyTinDaDuyet_TuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.quanLyTinDaDuyet_TuyenDung.Location = new System.Drawing.Point(0, 0);
-            this.quanLyTinDaDuyet_TuyenDung.Name = "quanLyTinDaDuyet_TuyenDung";
-            this.quanLyTinDaDuyet_TuyenDung.Size = new System.Drawing.Size(738, 561);
-            this.quanLyTinDaDuyet_TuyenDung.TabIndex = 5;
-            // 
-            // duyetTinMoi_TuyenDung
-            // 
-            this.duyetTinMoi_TuyenDung.AutoScroll = true;
-            this.duyetTinMoi_TuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.duyetTinMoi_TuyenDung.Location = new System.Drawing.Point(0, 0);
-            this.duyetTinMoi_TuyenDung.Name = "duyetTinMoi_TuyenDung";
-            this.duyetTinMoi_TuyenDung.Size = new System.Drawing.Size(738, 561);
-            this.duyetTinMoi_TuyenDung.TabIndex = 4;
-            // 
-            // themTinTuyenDung
-            // 
-            this.themTinTuyenDung.AutoScroll = true;
-            this.themTinTuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.themTinTuyenDung.Location = new System.Drawing.Point(0, 0);
-            this.themTinTuyenDung.Name = "themTinTuyenDung";
-            this.themTinTuyenDung.Size = new System.Drawing.Size(738, 561);
-            this.themTinTuyenDung.TabIndex = 3;
-            // 
-            // quanLyTinDaDuyet_TimViec
-            // 
-            this.quanLyTinDaDuyet_TimViec.BackColor = System.Drawing.Color.White;
-            this.quanLyTinDaDuyet_TimViec.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.quanLyTinDaDuyet_TimViec.Location = new System.Drawing.Point(0, 0);
-            this.quanLyTinDaDuyet_TimViec.Name = "quanLyTinDaDuyet_TimViec";
-            this.quanLyTinDaDuyet_TimViec.Size = new System.Drawing.Size(738, 561);
-            this.quanLyTinDaDuyet_TimViec.TabIndex = 2;
-            // 
-            // duyetTinMoi_TimViec
-            // 
-            this.duyetTinMoi_TimViec.BackColor = System.Drawing.Color.White;
-            this.duyetTinMoi_TimViec.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.duyetTinMoi_TimViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.duyetTinMoi_TimViec.Location = new System.Drawing.Point(0, 0);
-            this.duyetTinMoi_TimViec.Margin = new System.Windows.Forms.Padding(0);
-            this.duyetTinMoi_TimViec.Name = "duyetTinMoi_TimViec";
-            this.duyetTinMoi_TimViec.Size = new System.Drawing.Size(738, 561);
-            this.duyetTinMoi_TimViec.TabIndex = 1;
-            // 
-            // themNguoiTimViec
-            // 
-            this.themNguoiTimViec.AutoScroll = true;
-            this.themNguoiTimViec.BackColor = System.Drawing.Color.White;
-            this.themNguoiTimViec.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.themNguoiTimViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.themNguoiTimViec.Location = new System.Drawing.Point(0, 0);
-            this.themNguoiTimViec.Margin = new System.Windows.Forms.Padding(0);
-            this.themNguoiTimViec.Name = "themNguoiTimViec";
-            this.themNguoiTimViec.Size = new System.Drawing.Size(738, 561);
-            this.themNguoiTimViec.TabIndex = 0;
             // 
             // pnlNavigation
             // 
@@ -341,6 +264,7 @@
             this.btnQuanLyTuyenDung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuanLyTuyenDung.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQuanLyTuyenDung.UseVisualStyleBackColor = false;
+            this.btnQuanLyTuyenDung.Click += new System.EventHandler(this.btnQuanLyTuyenDung_Click);
             // 
             // pnlQuanLyNguoiTimViec
             // 
@@ -422,6 +346,7 @@
             this.btnQuanLyNguoiTimViec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuanLyNguoiTimViec.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQuanLyNguoiTimViec.UseVisualStyleBackColor = false;
+            this.btnQuanLyNguoiTimViec.Click += new System.EventHandler(this.btnQuanLyNguoiTimViec_Click);
             // 
             // pnlThongTinTaiKhoan
             // 
@@ -502,6 +427,83 @@
             this.ptbAvatar_TaiKhoan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAvatar_TaiKhoan.TabIndex = 0;
             this.ptbAvatar_TaiKhoan.TabStop = false;
+            // 
+            // themXoaTaiKhoan
+            // 
+            this.themXoaTaiKhoan.BackColor = System.Drawing.Color.White;
+            this.themXoaTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.themXoaTaiKhoan.Location = new System.Drawing.Point(0, 0);
+            this.themXoaTaiKhoan.Name = "themXoaTaiKhoan";
+            this.themXoaTaiKhoan.Size = new System.Drawing.Size(738, 561);
+            this.themXoaTaiKhoan.TabIndex = 7;
+            // 
+            // timKiem
+            // 
+            this.timKiem.BackColor = System.Drawing.Color.White;
+            this.timKiem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timKiem.Location = new System.Drawing.Point(0, 0);
+            this.timKiem.Name = "timKiem";
+            this.timKiem.Size = new System.Drawing.Size(738, 561);
+            this.timKiem.TabIndex = 6;
+            // 
+            // quanLyTinDaDuyet_TuyenDung
+            // 
+            this.quanLyTinDaDuyet_TuyenDung.BackColor = System.Drawing.Color.White;
+            this.quanLyTinDaDuyet_TuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.quanLyTinDaDuyet_TuyenDung.Location = new System.Drawing.Point(0, 0);
+            this.quanLyTinDaDuyet_TuyenDung.Name = "quanLyTinDaDuyet_TuyenDung";
+            this.quanLyTinDaDuyet_TuyenDung.Size = new System.Drawing.Size(738, 561);
+            this.quanLyTinDaDuyet_TuyenDung.TabIndex = 5;
+            // 
+            // duyetTinMoi_TuyenDung
+            // 
+            this.duyetTinMoi_TuyenDung.AutoScroll = true;
+            this.duyetTinMoi_TuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.duyetTinMoi_TuyenDung.Location = new System.Drawing.Point(0, 0);
+            this.duyetTinMoi_TuyenDung.Name = "duyetTinMoi_TuyenDung";
+            this.duyetTinMoi_TuyenDung.Size = new System.Drawing.Size(738, 561);
+            this.duyetTinMoi_TuyenDung.TabIndex = 4;
+            // 
+            // themTinTuyenDung
+            // 
+            this.themTinTuyenDung.AutoScroll = true;
+            this.themTinTuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.themTinTuyenDung.Location = new System.Drawing.Point(0, 0);
+            this.themTinTuyenDung.Name = "themTinTuyenDung";
+            this.themTinTuyenDung.Size = new System.Drawing.Size(738, 561);
+            this.themTinTuyenDung.TabIndex = 3;
+            // 
+            // quanLyTinDaDuyet_TimViec
+            // 
+            this.quanLyTinDaDuyet_TimViec.BackColor = System.Drawing.Color.White;
+            this.quanLyTinDaDuyet_TimViec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.quanLyTinDaDuyet_TimViec.Location = new System.Drawing.Point(0, 0);
+            this.quanLyTinDaDuyet_TimViec.Name = "quanLyTinDaDuyet_TimViec";
+            this.quanLyTinDaDuyet_TimViec.Size = new System.Drawing.Size(738, 561);
+            this.quanLyTinDaDuyet_TimViec.TabIndex = 2;
+            // 
+            // duyetTinMoi_TimViec
+            // 
+            this.duyetTinMoi_TimViec.BackColor = System.Drawing.Color.White;
+            this.duyetTinMoi_TimViec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.duyetTinMoi_TimViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.duyetTinMoi_TimViec.Location = new System.Drawing.Point(0, 0);
+            this.duyetTinMoi_TimViec.Margin = new System.Windows.Forms.Padding(0);
+            this.duyetTinMoi_TimViec.Name = "duyetTinMoi_TimViec";
+            this.duyetTinMoi_TimViec.Size = new System.Drawing.Size(738, 561);
+            this.duyetTinMoi_TimViec.TabIndex = 1;
+            // 
+            // themNguoiTimViec
+            // 
+            this.themNguoiTimViec.AutoScroll = true;
+            this.themNguoiTimViec.BackColor = System.Drawing.Color.White;
+            this.themNguoiTimViec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.themNguoiTimViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.themNguoiTimViec.Location = new System.Drawing.Point(0, 0);
+            this.themNguoiTimViec.Margin = new System.Windows.Forms.Padding(0);
+            this.themNguoiTimViec.Name = "themNguoiTimViec";
+            this.themNguoiTimViec.Size = new System.Drawing.Size(738, 561);
+            this.themNguoiTimViec.TabIndex = 0;
             // 
             // FormChinh
             // 

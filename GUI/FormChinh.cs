@@ -219,5 +219,41 @@ namespace GUI
                 ptbLock_Click(sender, e);
             }
         }
+
+        //dropdown function
+        private void btnQuanLyNguoiTimViec_Click(object sender, EventArgs e)
+        {
+            Int32 maxHeight = 0;
+            foreach (Control crl in pnlQuanLyNguoiTimViec.Controls)
+                maxHeight += crl.Height;
+            if (pnlQuanLyNguoiTimViec.Height >= maxHeight)
+            {
+                while(pnlQuanLyNguoiTimViec.Height != btnQuanLyNguoiTimViec.Height)
+                    pnlQuanLyNguoiTimViec.Height--;
+            }
+            else
+            {
+                while(pnlQuanLyNguoiTimViec.Height != maxHeight)
+                    pnlQuanLyNguoiTimViec.Height++;
+            }
+        }
+        //dropdown function
+        private void btnQuanLyTuyenDung_Click(object sender, EventArgs e)
+        {
+
+            Int32 maxHeight = 0;
+            foreach (Control crl in pnlQuanLyTuyenDung.Controls)
+                maxHeight += crl.Height;
+            if (pnlQuanLyTuyenDung.Height >= maxHeight)
+            {
+                while (pnlQuanLyTuyenDung.Height != btnQuanLyTuyenDung.Height)
+                    pnlQuanLyTuyenDung.Height--;
+            }
+            else
+            {
+                while (pnlQuanLyTuyenDung.Height != maxHeight)
+                    pnlQuanLyTuyenDung.Height++;
+            }
+        }
     }
 }

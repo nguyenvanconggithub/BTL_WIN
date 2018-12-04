@@ -22,3 +22,12 @@ D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\obj\Debug\DAL.dll
 D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\obj\Debug\DAL.pdb
 D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\bin\Debug\DAL.dll
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\bin\Debug\DAL.pdb
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\bin\Debug\DTO.dll
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\bin\Debug\DTO.pdb
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\obj\Debug\DAL.dll
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\obj\Debug\DAL.pdb

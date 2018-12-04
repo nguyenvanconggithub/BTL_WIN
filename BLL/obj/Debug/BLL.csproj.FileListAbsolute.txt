@@ -31,3 +31,14 @@ D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\obj\Debug\BLL.csproj.CoreCompileI
 D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\obj\Debug\BLL.dll
 D:\Dowload from Chrome\BTL_WIN_new\BTL_WIN\BLL\obj\Debug\BLL.pdb
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\bin\Debug\BLL.dll
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\bin\Debug\BLL.pdb
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\bin\Debug\DAL.dll
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\bin\Debug\DTO.dll
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\bin\Debug\DAL.pdb
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\bin\Debug\DTO.pdb
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\obj\Debug\BLL.dll
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\BLL\obj\Debug\BLL.pdb
