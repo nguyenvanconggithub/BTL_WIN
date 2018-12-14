@@ -78,6 +78,7 @@
             this.txtPass.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Location = new System.Drawing.Point(334, 79);
+            this.txtPass.MaxLength = 50;
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(137, 30);
             this.txtPass.TabIndex = 11;
@@ -87,6 +88,7 @@
             this.txtAcc.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAcc.Location = new System.Drawing.Point(174, 79);
+            this.txtAcc.MaxLength = 50;
             this.txtAcc.Name = "txtAcc";
             this.txtAcc.Size = new System.Drawing.Size(135, 30);
             this.txtAcc.TabIndex = 12;

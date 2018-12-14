@@ -150,6 +150,7 @@
             this.txtTenCongTy.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTenCongTy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenCongTy.Location = new System.Drawing.Point(16, 16);
+            this.txtTenCongTy.MaxLength = 50;
             this.txtTenCongTy.Name = "txtTenCongTy";
             this.txtTenCongTy.Size = new System.Drawing.Size(693, 20);
             this.txtTenCongTy.TabIndex = 1;
@@ -193,6 +194,7 @@
             // 
             this.rtbSDT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rtbSDT.Location = new System.Drawing.Point(16, 18);
+            this.rtbSDT.MaxLength = 50;
             this.rtbSDT.Name = "rtbSDT";
             this.rtbSDT.Size = new System.Drawing.Size(693, 37);
             this.rtbSDT.TabIndex = 2;
@@ -238,6 +240,7 @@
             // 
             this.rtbDiaChi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rtbDiaChi.Location = new System.Drawing.Point(16, 18);
+            this.rtbDiaChi.MaxLength = 100;
             this.rtbDiaChi.Name = "rtbDiaChi";
             this.rtbDiaChi.Size = new System.Drawing.Size(690, 38);
             this.rtbDiaChi.TabIndex = 3;
@@ -726,6 +729,7 @@
             // 
             this.rtbMoTaCongViec.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rtbMoTaCongViec.Location = new System.Drawing.Point(13, 21);
+            this.rtbMoTaCongViec.MaxLength = 4000;
             this.rtbMoTaCongViec.Name = "rtbMoTaCongViec";
             this.rtbMoTaCongViec.Size = new System.Drawing.Size(693, 37);
             this.rtbMoTaCongViec.TabIndex = 13;
@@ -771,6 +775,7 @@
             // 
             this.rtbYeuCauHoSo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rtbYeuCauHoSo.Location = new System.Drawing.Point(13, 20);
+            this.rtbYeuCauHoSo.MaxLength = 4000;
             this.rtbYeuCauHoSo.Name = "rtbYeuCauHoSo";
             this.rtbYeuCauHoSo.Size = new System.Drawing.Size(693, 37);
             this.rtbYeuCauHoSo.TabIndex = 14;

@@ -118,6 +118,7 @@
             this.txtTenCongTy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenCongTy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenCongTy.Location = new System.Drawing.Point(20, 16);
+            this.txtTenCongTy.MaxLength = 50;
             this.txtTenCongTy.Name = "txtTenCongTy";
             this.txtTenCongTy.Size = new System.Drawing.Size(693, 22);
             this.txtTenCongTy.TabIndex = 1;
@@ -426,6 +427,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rtbSDT.Location = new System.Drawing.Point(20, 16);
+            this.rtbSDT.MaxLength = 50;
             this.rtbSDT.Name = "rtbSDT";
             this.rtbSDT.Size = new System.Drawing.Size(693, 33);
             this.rtbSDT.TabIndex = 2;
@@ -438,6 +440,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rtbDiaChi.Location = new System.Drawing.Point(20, 21);
+            this.rtbDiaChi.MaxLength = 100;
             this.rtbDiaChi.Name = "rtbDiaChi";
             this.rtbDiaChi.Size = new System.Drawing.Size(690, 39);
             this.rtbDiaChi.TabIndex = 3;
@@ -595,6 +598,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbMoTaCongViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rtbMoTaCongViec.Location = new System.Drawing.Point(23, 22);
+            this.rtbMoTaCongViec.MaxLength = 4000;
             this.rtbMoTaCongViec.Name = "rtbMoTaCongViec";
             this.rtbMoTaCongViec.Size = new System.Drawing.Size(693, 33);
             this.rtbMoTaCongViec.TabIndex = 13;
@@ -619,6 +623,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbYeuCauHoSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rtbYeuCauHoSo.Location = new System.Drawing.Point(23, 20);
+            this.rtbYeuCauHoSo.MaxLength = 4000;
             this.rtbYeuCauHoSo.Name = "rtbYeuCauHoSo";
             this.rtbYeuCauHoSo.Size = new System.Drawing.Size(693, 33);
             this.rtbYeuCauHoSo.TabIndex = 14;

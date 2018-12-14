@@ -126,6 +126,7 @@
             this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtHoTen.Location = new System.Drawing.Point(113, 26);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(0);
+            this.txtHoTen.MaxLength = 50;
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(583, 23);
             this.txtHoTen.TabIndex = 0;
@@ -357,6 +358,7 @@
             this.txtDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDienThoai.Location = new System.Drawing.Point(192, 105);
             this.txtDienThoai.Margin = new System.Windows.Forms.Padding(0);
+            this.txtDienThoai.MaxLength = 11;
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(504, 23);
             this.txtDienThoai.TabIndex = 5;
@@ -369,6 +371,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtEmail.Location = new System.Drawing.Point(192, 137);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(0);
+            this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(504, 23);
             this.txtEmail.TabIndex = 6;
@@ -382,6 +385,7 @@
             this.rtbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rtbDiaChi.Location = new System.Drawing.Point(40, 22);
             this.rtbDiaChi.Margin = new System.Windows.Forms.Padding(0);
+            this.rtbDiaChi.MaxLength = 100;
             this.rtbDiaChi.Name = "rtbDiaChi";
             this.rtbDiaChi.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.rtbDiaChi.Size = new System.Drawing.Size(655, 35);

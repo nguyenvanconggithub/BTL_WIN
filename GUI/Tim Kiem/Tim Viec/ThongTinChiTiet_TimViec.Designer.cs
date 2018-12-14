@@ -191,6 +191,7 @@
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmail.Location = new System.Drawing.Point(198, 133);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(0);
+            this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(504, 23);
             this.txtEmail.TabIndex = 4;
@@ -202,6 +203,7 @@
             this.txtHoTen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtHoTen.Location = new System.Drawing.Point(198, 13);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(0);
+            this.txtHoTen.MaxLength = 50;
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(504, 23);
             this.txtHoTen.TabIndex = 0;
@@ -227,6 +229,7 @@
             this.txtDienThoai.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDienThoai.Location = new System.Drawing.Point(219, 102);
             this.txtDienThoai.Margin = new System.Windows.Forms.Padding(0);
+            this.txtDienThoai.MaxLength = 11;
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(483, 23);
             this.txtDienThoai.TabIndex = 3;
@@ -237,6 +240,7 @@
             this.rtbDiaChi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rtbDiaChi.Location = new System.Drawing.Point(98, 3);
             this.rtbDiaChi.Margin = new System.Windows.Forms.Padding(0);
+            this.rtbDiaChi.MaxLength = 100;
             this.rtbDiaChi.Name = "rtbDiaChi";
             this.rtbDiaChi.Size = new System.Drawing.Size(604, 23);
             this.rtbDiaChi.TabIndex = 5;
