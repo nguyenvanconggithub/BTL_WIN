@@ -67,8 +67,8 @@ namespace GUI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-           /* try
-            {*/
+           try
+            {
                 string username = txtUsername.Text;
                 string pass = txtPassword.Text;
 
@@ -81,12 +81,12 @@ namespace GUI
                     this.Hide();
                 }
                 else MessageBox.Show("Sai tên tài khoản hoặc mật khẩu");
-            /*}*/
-            /*
+            }
+            
             catch
             {
-                MessageBox.Show("Bạn chưa được cấp quyền ");
-            }*/
+                MessageBox.Show("Lỗi, đăng nhập k thành công ");
+            }
         }
         private void btnExit_Click(object sender, EventArgs e)
         {

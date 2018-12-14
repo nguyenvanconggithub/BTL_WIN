@@ -84,7 +84,7 @@ namespace DAL
 
         public DataTable getAccount()
         {
-            string query = "SELECT * FROM Account";
+            string query = "SELECT * FROM Account WHERE isAdmin='false'";
             return DataTaiKhoan.Instance.ExcuteQuery(query);
         }
 
