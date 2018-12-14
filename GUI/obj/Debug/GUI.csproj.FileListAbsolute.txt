@@ -143,3 +143,4 @@ D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.
 D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\GUI\obj\Debug\GUI.csproj.CopyComplete
 D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\GUI\obj\Debug\GUI.exe
 D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\GUI\obj\Debug\GUI.pdb
+D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\GUI\obj\Debug\GUI.Quan_Ly_Tuyen_Dung.Quan_Ly_Tin_Da_Duyet.ThongTinChiTiet.resources

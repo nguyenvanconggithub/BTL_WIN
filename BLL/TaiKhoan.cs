@@ -19,7 +19,6 @@ namespace BLL
                 return instance;
             }
 
-
         }
 
         public TaiKhoanBLL() { }

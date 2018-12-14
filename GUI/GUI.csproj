@@ -216,6 +216,9 @@
     <EmbeddedResource Include="Quan Ly Tuyen Dung\Quan Ly Tin Da Duyet\QuanLyTinDaDuyet.resx">
       <DependentUpon>QuanLyTinDaDuyet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Quan Ly Tuyen Dung\Quan Ly Tin Da Duyet\ThongTinChiTiet.resx">
+      <DependentUpon>ThongTinChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Quan Ly Tuyen Dung\Quan Ly Tin Da Duyet\Tin.resx">
       <DependentUpon>Tin.cs</DependentUpon>
     </EmbeddedResource>

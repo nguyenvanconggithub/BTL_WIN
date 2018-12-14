@@ -106,28 +106,16 @@ namespace DAL
         }
         public DataTable timKiem(SqlCommand cmd)
         {
+            cmd.Connection = getConnect();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataView dv = new DataView();
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dv = dt.DefaultView;
+            dv.Sort = "ThoiGianDuyet DESC"; // Xem Tin Moi Nhat Truoc
+            dt = dv.ToTable();
+            return dt;
 
-            /*if (getConnect() != null)
-            {
-
-                try
-                {*/
-                    cmd.Connection = getConnect();
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    DataView dv = new DataView();
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    dv = dt.DefaultView;
-                    dv.Sort = "ThoiGianDuyet DESC"; // Xem Tin Moi Nhat Truoc
-                    dt = dv.ToTable();
-                    return dt;
-                /*}
-                catch (Exception)
-                {
-                    return null;
-                }
-            }
-            return null;*/
         }
         public string ExcuteNonQuery(SqlCommand command)
         {
