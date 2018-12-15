@@ -659,7 +659,7 @@
             "Tất cả",
             "Fulltime",
             "Parttime",
-            "Hợp đồng/Tư vấn",
+            "Hợp đồng/ Tư vấn",
             "Thực Tập",
             "Khác"});
             this.cboLoaiHinhCongViec.Location = new System.Drawing.Point(173, 137);

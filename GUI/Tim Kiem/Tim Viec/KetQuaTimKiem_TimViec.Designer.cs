@@ -76,6 +76,7 @@
             this.ftpContainer.Size = new System.Drawing.Size(738, 501);
             this.ftpContainer.TabIndex = 5;
             this.ftpContainer.WrapContents = false;
+            this.ftpContainer.Resize += new System.EventHandler(this.ftpContainer_Resize);
             // 
             // pnlPageControl
             // 
@@ -103,6 +104,7 @@
             this.btnNextPage.Text = ">";
             this.btnNextPage.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnNextPage.UseVisualStyleBackColor = true;
+            this.btnNextPage.Click += new System.EventHandler(this.btnNextPage_Click);
             // 
             // btnPreviousPage
             // 
@@ -119,19 +121,20 @@
             this.btnPreviousPage.Text = "<";
             this.btnPreviousPage.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnPreviousPage.UseVisualStyleBackColor = true;
+            this.btnPreviousPage.Click += new System.EventHandler(this.btnPreviousPage_Click);
             // 
             // thongTinChiTiet_TimViec
             // 
             this.thongTinChiTiet_TimViec.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.thongTinChiTiet_TimViec.AutoScroll = true;
             this.thongTinChiTiet_TimViec.BackColor = System.Drawing.Color.White;
             this.thongTinChiTiet_TimViec.Location = new System.Drawing.Point(0, 0);
             this.thongTinChiTiet_TimViec.Margin = new System.Windows.Forms.Padding(0);
             this.thongTinChiTiet_TimViec.Name = "thongTinChiTiet_TimViec";
             this.thongTinChiTiet_TimViec.Size = new System.Drawing.Size(738, 561);
             this.thongTinChiTiet_TimViec.TabIndex = 0;
+            this.thongTinChiTiet_TimViec.Load += new System.EventHandler(this.QuanLyTinDaDuyet_Load);
             // 
             // KetQuaTimKiem_TimViec
             // 

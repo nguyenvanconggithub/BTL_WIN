@@ -34,7 +34,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNextPage = new System.Windows.Forms.Button();
             this.btnPrePage = new System.Windows.Forms.Button();
-            this.thongTinChiTiet = new GUI.Quan_Ly_Tuyen_Dung.Quan_Ly_Tin_Da_Duyet.ThongTinChiTiet();
             this.thongTinChiTiet_TuyenDung = new GUI.Tim_Kiem.Tuyen_Dung.ThongTinChiTiet_TuyenDung();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -124,24 +123,16 @@
             this.btnPrePage.UseVisualStyleBackColor = true;
             this.btnPrePage.Click += new System.EventHandler(this.btnPrePage_Click);
             // 
-            // thongTinChiTiet
-            // 
-            this.thongTinChiTiet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.thongTinChiTiet.AutoScroll = true;
-            this.thongTinChiTiet.Location = new System.Drawing.Point(0, 0);
-            this.thongTinChiTiet.Name = "thongTinChiTiet";
-            this.thongTinChiTiet.Size = new System.Drawing.Size(738, 531);
-            this.thongTinChiTiet.TabIndex = 4;
-            // 
             // thongTinChiTiet_TuyenDung
             // 
             this.thongTinChiTiet_TuyenDung.AutoScroll = true;
+            this.thongTinChiTiet_TuyenDung.BackColor = System.Drawing.Color.White;
             this.thongTinChiTiet_TuyenDung.Location = new System.Drawing.Point(0, 0);
             this.thongTinChiTiet_TuyenDung.Name = "thongTinChiTiet_TuyenDung";
             this.thongTinChiTiet_TuyenDung.Size = new System.Drawing.Size(738, 561);
             this.thongTinChiTiet_TuyenDung.TabIndex = 0;
+            this.thongTinChiTiet_TuyenDung.Load += new System.EventHandler(this.QuanLyTinDaDuyet_Load);
+            this.thongTinChiTiet_TuyenDung.Resize += new System.EventHandler(this.QuanLyTinDaDuyet_Resize);
             // 
             // KetQuaTimKiem_TuyenDung
             // 
@@ -151,11 +142,11 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpConten);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.thongTinChiTiet);
             this.Controls.Add(this.thongTinChiTiet_TuyenDung);
             this.Name = "KetQuaTimKiem_TuyenDung";
             this.Size = new System.Drawing.Size(738, 561);
             this.Load += new System.EventHandler(this.QuanLyTinDaDuyet_Load);
+            this.Resize += new System.EventHandler(this.QuanLyTinDaDuyet_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -171,7 +162,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnNextPage;
         private System.Windows.Forms.Button btnPrePage;
-        private Quan_Ly_Tuyen_Dung.Quan_Ly_Tin_Da_Duyet.ThongTinChiTiet thongTinChiTiet;
         private ThongTinChiTiet_TuyenDung thongTinChiTiet_TuyenDung;
     }
 }

@@ -225,7 +225,7 @@ namespace BLL
         {
             try
             {
-                string cmdtext = "select * from TinTuyenDung where NganhNghe LIKE N'" + search.NganhNghe + "' AND NoiLamViec LIKE N'" + search.NoiLamViec + "' AND LoaiHinhCongViec LIKE N'" + search.LoaiHinhCongViec + "' AND TrinhDo LIKE N'" + search.TrinhDo + "' AND NamKinhNghiem LIKE N'" + search.NamKinhNghiem + "' AND Luong LIKE N'" + search.Luong + "'AND YeuCauGioiTinh LIKE N'" + search.YeuCauGioiTinh + "' ";
+                string cmdtext = "select * from TinTuyenDung where NganhNghe LIKE N'" + search.NganhNghe + "' AND NoiLamViec LIKE N'" + search.NoiLamViec + "' AND LoaiHinhCongViec LIKE N'" + search.LoaiHinhCongViec + "' AND TrinhDo LIKE N'" + search.TrinhDo + "' AND NamKinhNghiem LIKE N'" + search.NamKinhNghiem + "' AND Luong LIKE N'" + search.Luong + "'AND YeuCauGioiTinh LIKE N'" + search.YeuCauGioiTinh + "'AND DaDuyet = 'true' ";
                 DataTable table = new DataTable();
                 dt = DAL.DataTinTuyenDung.DaTa.TimKiemTinTuyenDung(cmdtext);
                 return dt;

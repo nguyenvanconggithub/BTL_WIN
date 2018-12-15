@@ -79,7 +79,7 @@ namespace DAL
         }
         public DataTable getTinByMaTin(string maTin)
         {
-            SqlDataAdapter da = new SqlDataAdapter("select * from TinTuyenDung where MaTin = '"+maTin+"' and DaDuyet='true'", getConnect());
+            SqlDataAdapter da = new SqlDataAdapter("select * from TinTuyenDung where MaTin = '"+maTin+"' and DaDuyet = 'true'", getConnect());
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;

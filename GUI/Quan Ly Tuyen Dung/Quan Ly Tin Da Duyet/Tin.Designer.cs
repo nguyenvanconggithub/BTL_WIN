@@ -43,22 +43,22 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.SuspendLayout();
@@ -122,7 +122,6 @@
             this.label4.Size = new System.Drawing.Size(42, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Vị Trí:";
-
             // 
             // lblViTri
             // 
@@ -143,12 +142,11 @@
             this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 7;
             this.label6.Text = "Số lượng:";
-
             // 
             // lblNoiLamViec
             // 
             this.lblNoiLamViec.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNoiLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblNoiLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblNoiLamViec.Location = new System.Drawing.Point(0, 0);
             this.lblNoiLamViec.Name = "lblNoiLamViec";
             this.lblNoiLamViec.Size = new System.Drawing.Size(150, 17);
@@ -219,17 +217,6 @@
             this.panel3.Size = new System.Drawing.Size(260, 23);
             this.panel3.TabIndex = 15;
             // 
-            // panel4
-            // 
-            this.panel4.AutoSize = true;
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.lblViTri);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(105, 23);
-            this.panel4.TabIndex = 0;
-            // 
             // panel6
             // 
             this.panel6.AutoSize = true;
@@ -240,6 +227,17 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(142, 23);
             this.panel6.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.AutoSize = true;
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.lblViTri);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(105, 23);
+            this.panel4.TabIndex = 0;
             // 
             // panel5
             // 
@@ -252,6 +250,16 @@
             this.panel5.Size = new System.Drawing.Size(224, 22);
             this.panel5.TabIndex = 16;
             // 
+            // panel1
+            // 
+            this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.lblLoaiHinhCongViec);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(149, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(61, 22);
+            this.panel1.TabIndex = 17;
+            // 
             // panel7
             // 
             this.panel7.AutoSize = true;
@@ -262,16 +270,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(89, 22);
             this.panel7.TabIndex = 17;
-            // 
-            // panel1
-            // 
-            this.panel1.AutoSize = true;
-            this.panel1.Controls.Add(this.lblLoaiHinhCongViec);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(149, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(61, 22);
-            this.panel1.TabIndex = 17;
             // 
             // panel8
             // 
@@ -289,6 +287,7 @@
             this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel9.AutoSize = true;
             this.panel9.Controls.Add(this.lblNoiLamViec);
+            this.panel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.panel9.Location = new System.Drawing.Point(577, 69);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(150, 17);
@@ -317,16 +316,16 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);

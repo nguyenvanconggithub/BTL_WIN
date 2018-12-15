@@ -67,6 +67,7 @@ namespace GUI.Quan_Ly_Nguoi_Tim_Viec.Them_Nguoi_Tim_Viec
             img.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
             tinDTO.Img = memoryStream.ToArray();
 
+            
             //hide the scrollbar
             this.VerticalScroll.Maximum = 0;
             this.AutoScroll = true;

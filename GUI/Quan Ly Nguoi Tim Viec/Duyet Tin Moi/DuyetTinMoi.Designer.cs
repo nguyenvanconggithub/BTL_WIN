@@ -59,10 +59,10 @@
             this.btnDuyet = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.ptbAvatar = new System.Windows.Forms.PictureBox();
-            this.blankUserControl = new GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi.BlankUserControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.blankUserControl = new GUI.Quan_Ly_Nguoi_Tim_Viec.Duyet_Tin_Moi.BlankUserControl();
             this.pnlDuyetTinMoi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAvatar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -400,15 +400,6 @@
             this.ptbAvatar.TabIndex = 0;
             this.ptbAvatar.TabStop = false;
             // 
-            // blankUserControl
-            // 
-            this.blankUserControl.BackColor = System.Drawing.Color.White;
-            this.blankUserControl.Location = new System.Drawing.Point(0, 30);
-            this.blankUserControl.Margin = new System.Windows.Forms.Padding(0);
-            this.blankUserControl.Name = "blankUserControl";
-            this.blankUserControl.Size = new System.Drawing.Size(738, 531);
-            this.blankUserControl.TabIndex = 4;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -463,6 +454,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(738, 271);
             this.panel3.TabIndex = 7;
+            // 
+            // blankUserControl
+            // 
+            this.blankUserControl.BackColor = System.Drawing.Color.White;
+            this.blankUserControl.Location = new System.Drawing.Point(0, 30);
+            this.blankUserControl.Margin = new System.Windows.Forms.Padding(0);
+            this.blankUserControl.Name = "blankUserControl";
+            this.blankUserControl.Size = new System.Drawing.Size(738, 531);
+            this.blankUserControl.TabIndex = 4;
             // 
             // DuyetTinMoi
             // 

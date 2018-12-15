@@ -275,7 +275,7 @@
             "Tất cả",
             "Fulltime",
             "Parttime",
-            "Hợp đồng/Tư vấn",
+            "Hợp đồng/ Tư vấn",
             "Thực Tập",
             "Khác"});
             this.cmbHinhThucLamViec.Location = new System.Drawing.Point(174, 88);

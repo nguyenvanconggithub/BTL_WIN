@@ -48,8 +48,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbLoaiHinhCongViec = new System.Windows.Forms.ComboBox();
-            this.ketQuaTimKiem_TuyenDung = new GUI.Tim_Kiem.Tuyen_Dung.KetQuaTimKiem_TuyenDung();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ketQuaTimKiem_TuyenDung = new GUI.Tim_Kiem.Tuyen_Dung.KetQuaTimKiem_TuyenDung();
             this.ketQuaTimKiem_TimViec = new GUI.Tim_Kiem.Tim_Viec.KetQuaTimKiem_TimViec();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -357,24 +357,13 @@
             "Tất cả",
             "Fulltime",
             "Parttime",
-            "Hợp đồng/Tư vấn",
+            "Hợp đồng/ Tư vấn",
             "Thực Tập",
             "Khác"});
             this.cmbLoaiHinhCongViec.Location = new System.Drawing.Point(341, 181);
             this.cmbLoaiHinhCongViec.Name = "cmbLoaiHinhCongViec";
             this.cmbLoaiHinhCongViec.Size = new System.Drawing.Size(192, 24);
             this.cmbLoaiHinhCongViec.TabIndex = 15;
-            // 
-            // ketQuaTimKiem_TuyenDung
-            // 
-            this.ketQuaTimKiem_TuyenDung.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ketQuaTimKiem_TuyenDung.BackColor = System.Drawing.Color.White;
-            this.ketQuaTimKiem_TuyenDung.Location = new System.Drawing.Point(0, 0);
-            this.ketQuaTimKiem_TuyenDung.Name = "ketQuaTimKiem_TuyenDung";
-            this.ketQuaTimKiem_TuyenDung.Size = new System.Drawing.Size(738, 561);
-            this.ketQuaTimKiem_TuyenDung.TabIndex = 21;
             // 
             // panel2
             // 
@@ -401,6 +390,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(738, 531);
             this.panel2.TabIndex = 22;
+            // 
+            // ketQuaTimKiem_TuyenDung
+            // 
+            this.ketQuaTimKiem_TuyenDung.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ketQuaTimKiem_TuyenDung.BackColor = System.Drawing.Color.White;
+            this.ketQuaTimKiem_TuyenDung.Location = new System.Drawing.Point(0, 0);
+            this.ketQuaTimKiem_TuyenDung.Name = "ketQuaTimKiem_TuyenDung";
+            this.ketQuaTimKiem_TuyenDung.Size = new System.Drawing.Size(738, 561);
+            this.ketQuaTimKiem_TuyenDung.TabIndex = 21;
             // 
             // ketQuaTimKiem_TimViec
             // 

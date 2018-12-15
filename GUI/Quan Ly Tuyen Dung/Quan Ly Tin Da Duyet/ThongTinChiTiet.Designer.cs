@@ -205,10 +205,10 @@
             // 
             this.lblSDT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblSDT.AutoSize = true;
-            this.lblSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblSDT.Location = new System.Drawing.Point(21, 19);
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(59, 16);
+            this.lblSDT.Size = new System.Drawing.Size(52, 16);
             this.lblSDT.TabIndex = 115;
             this.lblSDT.Text = "label15";
             // 
@@ -251,10 +251,10 @@
             // 
             this.lblDiaChi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblDiaChi.AutoSize = true;
-            this.lblDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblDiaChi.Location = new System.Drawing.Point(18, 24);
             this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(59, 16);
+            this.lblDiaChi.Size = new System.Drawing.Size(52, 16);
             this.lblDiaChi.TabIndex = 121;
             this.lblDiaChi.Text = "label15";
             // 
@@ -331,10 +331,10 @@
             // 
             this.lblViTri.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblViTri.AutoSize = true;
-            this.lblViTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblViTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblViTri.Location = new System.Drawing.Point(446, 5);
             this.lblViTri.Name = "lblViTri";
-            this.lblViTri.Size = new System.Drawing.Size(59, 16);
+            this.lblViTri.Size = new System.Drawing.Size(52, 16);
             this.lblViTri.TabIndex = 164;
             this.lblViTri.Text = "label18";
             // 
@@ -415,7 +415,7 @@
             "Tất cả",
             "Fulltime",
             "Parttime",
-            "Hợp đồng/Tư vấn",
+            "Hợp đồng/ Tư vấn",
             "Thực Tập",
             "Khác"});
             this.cmbHinhThucLamViec.Location = new System.Drawing.Point(137, 89);
@@ -447,10 +447,10 @@
             // 
             this.lblYeuCauGioiTinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblYeuCauGioiTinh.AutoSize = true;
-            this.lblYeuCauGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblYeuCauGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblYeuCauGioiTinh.Location = new System.Drawing.Point(139, 182);
             this.lblYeuCauGioiTinh.Name = "lblYeuCauGioiTinh";
-            this.lblYeuCauGioiTinh.Size = new System.Drawing.Size(59, 16);
+            this.lblYeuCauGioiTinh.Size = new System.Drawing.Size(52, 16);
             this.lblYeuCauGioiTinh.TabIndex = 157;
             this.lblYeuCauGioiTinh.Text = "label23";
             // 
@@ -458,10 +458,10 @@
             // 
             this.lblYeuCauKinhNghiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblYeuCauKinhNghiem.AutoSize = true;
-            this.lblYeuCauKinhNghiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblYeuCauKinhNghiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblYeuCauKinhNghiem.Location = new System.Drawing.Point(165, 152);
             this.lblYeuCauKinhNghiem.Name = "lblYeuCauKinhNghiem";
-            this.lblYeuCauKinhNghiem.Size = new System.Drawing.Size(59, 16);
+            this.lblYeuCauKinhNghiem.Size = new System.Drawing.Size(52, 16);
             this.lblYeuCauKinhNghiem.TabIndex = 156;
             this.lblYeuCauKinhNghiem.Text = "label22";
             // 
@@ -469,10 +469,10 @@
             // 
             this.lblYeuCauBangCap.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblYeuCauBangCap.AutoSize = true;
-            this.lblYeuCauBangCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblYeuCauBangCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblYeuCauBangCap.Location = new System.Drawing.Point(151, 122);
             this.lblYeuCauBangCap.Name = "lblYeuCauBangCap";
-            this.lblYeuCauBangCap.Size = new System.Drawing.Size(59, 16);
+            this.lblYeuCauBangCap.Size = new System.Drawing.Size(52, 16);
             this.lblYeuCauBangCap.TabIndex = 155;
             this.lblYeuCauBangCap.Text = "label21";
             // 
@@ -480,10 +480,10 @@
             // 
             this.lblHinhThucLamViec.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblHinhThucLamViec.AutoSize = true;
-            this.lblHinhThucLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblHinhThucLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblHinhThucLamViec.Location = new System.Drawing.Point(146, 92);
             this.lblHinhThucLamViec.Name = "lblHinhThucLamViec";
-            this.lblHinhThucLamViec.Size = new System.Drawing.Size(59, 16);
+            this.lblHinhThucLamViec.Size = new System.Drawing.Size(52, 16);
             this.lblHinhThucLamViec.TabIndex = 154;
             this.lblHinhThucLamViec.Text = "label20";
             // 
@@ -576,10 +576,10 @@
             // 
             this.lblSoLuong.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblSoLuong.AutoSize = true;
-            this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblSoLuong.Location = new System.Drawing.Point(92, 62);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(59, 16);
+            this.lblSoLuong.Size = new System.Drawing.Size(52, 16);
             this.lblSoLuong.TabIndex = 150;
             this.lblSoLuong.Text = "label19";
             // 
@@ -587,10 +587,10 @@
             // 
             this.lblLuong.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLuong.AutoSize = true;
-            this.lblLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblLuong.Location = new System.Drawing.Point(452, 62);
             this.lblLuong.Name = "lblLuong";
-            this.lblLuong.Size = new System.Drawing.Size(59, 16);
+            this.lblLuong.Size = new System.Drawing.Size(52, 16);
             this.lblLuong.TabIndex = 149;
             this.lblLuong.Text = "label18";
             // 
@@ -739,10 +739,10 @@
             // 
             this.lblMoTaCongViec.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblMoTaCongViec.AutoSize = true;
-            this.lblMoTaCongViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblMoTaCongViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblMoTaCongViec.Location = new System.Drawing.Point(23, 22);
             this.lblMoTaCongViec.Name = "lblMoTaCongViec";
-            this.lblMoTaCongViec.Size = new System.Drawing.Size(59, 16);
+            this.lblMoTaCongViec.Size = new System.Drawing.Size(52, 16);
             this.lblMoTaCongViec.TabIndex = 136;
             this.lblMoTaCongViec.Text = "label24";
             // 
@@ -785,10 +785,10 @@
             // 
             this.lblYeuCauHoSo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblYeuCauHoSo.AutoSize = true;
-            this.lblYeuCauHoSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblYeuCauHoSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblYeuCauHoSo.Location = new System.Drawing.Point(25, 22);
             this.lblYeuCauHoSo.Name = "lblYeuCauHoSo";
-            this.lblYeuCauHoSo.Size = new System.Drawing.Size(59, 16);
+            this.lblYeuCauHoSo.Size = new System.Drawing.Size(52, 16);
             this.lblYeuCauHoSo.TabIndex = 137;
             this.lblYeuCauHoSo.Text = "label25";
             // 
@@ -811,7 +811,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 511);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(738, 37);
+            this.panel8.Size = new System.Drawing.Size(738, 47);
             this.panel8.TabIndex = 166;
             // 
             // btnXoa
@@ -821,8 +821,7 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnXoa.Location = new System.Drawing.Point(460, -2);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(0);
+            this.btnXoa.Location = new System.Drawing.Point(460, 0);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 40);
             this.btnXoa.TabIndex = 114;
@@ -836,8 +835,7 @@
             this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(185)))), ((int)(((byte)(13)))));
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSua.Location = new System.Drawing.Point(173, -2);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSua.Location = new System.Drawing.Point(173, 0);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(100, 40);
             this.btnSua.TabIndex = 113;
@@ -847,8 +845,7 @@
             // 
             // ThongTinChiTiet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -858,6 +855,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Name = "ThongTinChiTiet";
             this.Size = new System.Drawing.Size(738, 561);
             this.Load += new System.EventHandler(this.ThongTinChiTiet_Load);

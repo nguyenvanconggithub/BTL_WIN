@@ -56,6 +56,7 @@ namespace GUI.Tim_Kiem.Tuyen_Dung
         private void showDetail(object sender, EventArgs e)
         {
             Tin_TuyenDung shortTin = sender as Tin_TuyenDung;
+            
             tinDTO = BLL.TinTuyenDung.Tin.getTinByMaTin(shortTin.Name);
             thongTinChiTiet_TuyenDung.loadTin(tinDTO);
             thongTinChiTiet_TuyenDung.Show();
@@ -119,6 +120,7 @@ namespace GUI.Tim_Kiem.Tuyen_Dung
                 tin.Dispose();
             }
 
+            thongTinChiTiet_TuyenDung.SendToBack();
             LoadData();
             flpConten.Select();
         }

@@ -123,7 +123,7 @@ namespace GUI.Tim_Kiem.Tim_Viec
             else
                 LoadData();
 
-
+            thongTinChiTiet_TimViec.SendToBack();
             ftpContainer.Select();
         }
 
@@ -131,5 +131,6 @@ namespace GUI.Tim_Kiem.Tim_Viec
         {
             searchInfo = search;
         }
+
     }
 }

@@ -18,6 +18,7 @@ namespace GUI.Tim_Kiem
 
         private void btnTim_Click(object sender, EventArgs e)
         {
+           
             if(rdoViec.Checked)
             {
                 //load tim viec

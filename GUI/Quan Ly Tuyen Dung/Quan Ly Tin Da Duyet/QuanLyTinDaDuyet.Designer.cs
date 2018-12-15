@@ -124,7 +124,8 @@
             // 
             // thongTinChiTiet
             // 
-            this.thongTinChiTiet.AutoScroll = true;
+            this.thongTinChiTiet.BackColor = System.Drawing.Color.White;
+            this.thongTinChiTiet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.thongTinChiTiet.Location = new System.Drawing.Point(0, 0);
             this.thongTinChiTiet.Name = "thongTinChiTiet";
             this.thongTinChiTiet.Size = new System.Drawing.Size(738, 531);

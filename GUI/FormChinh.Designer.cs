@@ -135,7 +135,7 @@
             // 
             // duyetTinMoi_TuyenDung
             // 
-            this.duyetTinMoi_TuyenDung.AutoScroll = true;
+            this.duyetTinMoi_TuyenDung.BackColor = System.Drawing.Color.White;
             this.duyetTinMoi_TuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.duyetTinMoi_TuyenDung.Location = new System.Drawing.Point(0, 0);
             this.duyetTinMoi_TuyenDung.Name = "duyetTinMoi_TuyenDung";
@@ -144,7 +144,7 @@
             // 
             // themTinTuyenDung
             // 
-            this.themTinTuyenDung.AutoScroll = true;
+            this.themTinTuyenDung.BackColor = System.Drawing.Color.White;
             this.themTinTuyenDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.themTinTuyenDung.Location = new System.Drawing.Point(0, 0);
             this.themTinTuyenDung.Name = "themTinTuyenDung";
@@ -173,7 +173,6 @@
             // 
             // themNguoiTimViec
             // 
-            this.themNguoiTimViec.AutoScroll = true;
             this.themNguoiTimViec.BackColor = System.Drawing.Color.White;
             this.themNguoiTimViec.Dock = System.Windows.Forms.DockStyle.Fill;
             this.themNguoiTimViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));

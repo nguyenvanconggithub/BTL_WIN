@@ -32,6 +32,9 @@ namespace GUI
             pnlNavigation.VerticalScroll.Maximum = 0;
             pnlNavigation.AutoScroll = true;
 
+            pnlContent.VerticalScroll.Maximum = 0;
+            pnlContent.AutoScroll = true;
+
             foreach(UserControl uc in pnlContent.Controls)
             {
                 uc.Hide();
