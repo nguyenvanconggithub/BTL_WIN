@@ -437,8 +437,7 @@
             "5",
             "10",
             "15",
-            "20",
-            ">20"});
+            "20"});
             this.cmbSoLuong.Location = new System.Drawing.Point(83, 59);
             this.cmbSoLuong.Name = "cmbSoLuong";
             this.cmbSoLuong.Size = new System.Drawing.Size(153, 24);

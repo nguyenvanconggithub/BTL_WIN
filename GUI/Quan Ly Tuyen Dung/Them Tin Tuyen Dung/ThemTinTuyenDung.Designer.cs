@@ -249,8 +249,7 @@
             "5",
             "10",
             "15",
-            "20",
-            ">20"});
+            "20"});
             this.cmbSoLuong.Location = new System.Drawing.Point(87, 58);
             this.cmbSoLuong.Name = "cmbSoLuong";
             this.cmbSoLuong.Size = new System.Drawing.Size(135, 24);
