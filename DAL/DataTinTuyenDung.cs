@@ -25,8 +25,8 @@ namespace DAL
         }
         public SqlConnection getConnect()
         {
-            //SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
-            SqlConnection conn = new SqlConnection(@"Data Source=.;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
+            //SqlConnection conn = new SqlConnection(@"Data Source=.;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
             return conn;
         }
         public DataTable getTable()

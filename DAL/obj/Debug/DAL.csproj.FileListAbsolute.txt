@@ -31,3 +31,12 @@ D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.
 D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\obj\Debug\DAL.dll
 D:\VS Code\BTL_WINFORM_FINAL\BTL_WIN\DAL\obj\Debug\DAL.pdb
+D:\VS Code\BTL_WINFORM_FINAL\Nhom16_QuanLyNguoiTimViec-ViecTimNguoi\Nhom16_KTPM3_K11_SourceCode\DAL\bin\Debug\DAL.dll
+D:\VS Code\BTL_WINFORM_FINAL\Nhom16_QuanLyNguoiTimViec-ViecTimNguoi\Nhom16_KTPM3_K11_SourceCode\DAL\bin\Debug\DAL.pdb
+D:\VS Code\BTL_WINFORM_FINAL\Nhom16_QuanLyNguoiTimViec-ViecTimNguoi\Nhom16_KTPM3_K11_SourceCode\DAL\bin\Debug\DTO.dll
+D:\VS Code\BTL_WINFORM_FINAL\Nhom16_QuanLyNguoiTimViec-ViecTimNguoi\Nhom16_KTPM3_K11_SourceCode\DAL\bin\Debug\DTO.pdb
+D:\VS Code\BTL_WINFORM_FINAL\Nhom16_QuanLyNguoiTimViec-ViecTimNguoi\Nhom16_KTPM3_K11_SourceCode\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\VS Code\BTL_WINFORM_FINAL\Nhom16_QuanLyNguoiTimViec-ViecTimNguoi\Nhom16_KTPM3_K11_SourceCode\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\VS Code\BTL_WINFORM_FINAL\Nhom16_QuanLyNguoiTimViec-ViecTimNguoi\Nhom16_KTPM3_K11_SourceCode\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\VS Code\BTL_WINFORM_FINAL\Nhom16_QuanLyNguoiTimViec-ViecTimNguoi\Nhom16_KTPM3_K11_SourceCode\DAL\obj\Debug\DAL.dll
+D:\VS Code\BTL_WINFORM_FINAL\Nhom16_QuanLyNguoiTimViec-ViecTimNguoi\Nhom16_KTPM3_K11_SourceCode\DAL\obj\Debug\DAL.pdb

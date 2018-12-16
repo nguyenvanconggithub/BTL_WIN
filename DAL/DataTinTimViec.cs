@@ -24,8 +24,8 @@ namespace DAL
             try
             {
 
-                //SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
-                SqlConnection conn = new SqlConnection(@"Data Source=.;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
+                SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
+                //SqlConnection conn = new SqlConnection(@"Data Source=.;Initial Catalog=NguoiTimViec_ViecTimNguoi;Integrated Security=True");
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
                 return conn;
